@@ -18,16 +18,6 @@ function preload() {
   font = loadFont("assets/fonts/Righteous-Regular.ttf");
 }
 
-function setup() {
-  createCanvas(windowWidth, window.innerHeight).parent("#splash");
-  textCol2 = color("#98CE00");
-
-  fontGen();
-  console.log(textSize());
-  document.getElementById("spacer").style.height = textSize();
-  image(textMask, 0, 0);
-}
-
 function getPoints(text, sample, thresh) {
   let offset = width / 20;
   let pts = font.textToPoints(text, offset, textSize() - offset, textSize(), {
@@ -42,7 +32,6 @@ function fontGen() {
   particles = [];
   textSize(maxWidth(theText, width));
   points = getPoints(theText, 0.6, 0);
-  console.log(points.length);
   points2 = getPoints(theText, 1, 0.7);
   bounds = font.textBounds(theText, 50, textSize() - 50, textSize());
   drawText();
@@ -52,7 +41,6 @@ function fontGen() {
     let b = new Particle(x, y);
     particles.push(b);
   }
-  console.log(particles.length);
 }
 
 function maxWidth(string, width) {
@@ -69,6 +57,7 @@ function maxWidth(string, width) {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  msnry.layout();
 }
 
 function drawText() {
@@ -87,48 +76,5 @@ function drawText() {
         points2[p - 1].y
       );
     }
-  }
-}
-
-function draw() {
-  noFill();
-  image(textMask, 0, 0);
-  for (i = 0; i < particles.length; i++) {
-    particles[i].move();
-    particles[i].display();
-  }
-}
-
-class Particle {
-  constructor(x, y) {
-    this.pos = createVector(x, y);
-    this.dir = createVector(0, 0);
-    this.speed = random(spdRange[0], spdRange[1]);
-    this.col1 = color(random(colors));
-    this.col2 = color(random(colors));
-    this.r = (spdRange[1] + spdRange[0] - this.speed) * 5;
-    this.alpha = 255;
-  }
-  move() {
-    this.noise =
-      500 *
-      map(
-        noise(this.pos.x * noiseScale, this.pos.y * noiseScale),
-        0.2,
-        0.8,
-        -1,
-        1
-      );
-    this.dir = createVector(cos(this.noise), sin(this.noise));
-    this.dir.mult(this.speed);
-    this.pos.add(this.dir);
-  }
-
-  display() {
-    let col = lerpColor(this.col1, this.col2, this.noise);
-    col.setAlpha(40);
-    stroke(col);
-    strokeWeight(this.r);
-    point(this.pos.x, this.pos.y);
   }
 }
