@@ -1,0 +1,28 @@
+{
+  "name": "abstractconcrete.center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Center-Abstract-Concrete-Machines/abstractconcrete.center.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Center-Abstract-Concrete-Machines/abstractconcrete.center/issues"
+  },
+  "homepage": "https://github.com/Center-Abstract-Concrete-Machines/abstractconcrete.center#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "p5": "^1.6.0"
+  }
+}

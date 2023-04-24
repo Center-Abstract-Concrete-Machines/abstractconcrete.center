@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fffbf1;
+  color: #2d2d2a;
+}
+
+canvas {
+  position: absolute;
+  z-index: -1 !important;
+  top: 0px;
+  display: block;
+}
+
+#content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#splash {
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  background-color: rgba(239, 131, 84, 0.8);
+}
+
+h2 {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  background-color: rgba(239, 131, 84, 0.8);
+}
