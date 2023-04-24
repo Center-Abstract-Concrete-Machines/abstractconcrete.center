@@ -1,47 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="Garrett Laroy Johnson" />
-    <title>{{ title }}</title>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+---
+layout: base.njk
+---
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+{# space holder for animation #}
 
-    <!-- Custom styles -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="assets/js/p5.min.js"></script>
-
-    <link href="/assets/css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="splash">
-      <div id="content">
-        {{ content | safe }}
-      </div>
-    </div>
-
-    <script src="assets/js/drawer.js"></script>
-  </body>
-</html>
+<div id="spacer"></div>
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+    <h1>The Center for Concrete and Abstract Machines</h1>
+  </div>
+  {% for e in elements %}
+  <div class="grid-item">
+    <h2>{{ e.title }}</h2>
+    <p>{{ e.text }}</p>
+  </div>
+  {% endfor%}
+</div>

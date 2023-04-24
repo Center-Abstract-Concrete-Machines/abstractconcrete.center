@@ -7,6 +7,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./node_modules/p5/lib/p5.min.js": "/assets/js/p5.min.js",
   });
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/masonry-layout/dist/masonry.pkdg.min.js":
+      "/assets/js/masonry.pkgd.min.js",
+  });
+  eleventyConfig.addWatchTarget("src/assets/js/");
   const FOOTNOTE_MAP = [];
   eleventyConfig.addPairedShortcode(
     "footnoteref",

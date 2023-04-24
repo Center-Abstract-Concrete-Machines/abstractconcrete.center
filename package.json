@@ -23,6 +23,7 @@
     "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
+    "masonry-layout": "^4.2.2",
     "p5": "^1.6.0"
   }
 }

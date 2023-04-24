@@ -23,9 +23,8 @@ function setup() {
   textCol2 = color("#98CE00");
 
   fontGen();
-
-  content = select("#content");
-  content.position(0, textSize());
+  console.log(textSize());
+  document.getElementById("spacer").style.height = textSize();
   image(textMask, 0, 0);
 }
 
@@ -70,9 +69,6 @@ function maxWidth(string, width) {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  //   background("#fffbf1");
-  //   content.position(0, textSize());
-  //   fontGen();
 }
 
 function drawText() {
