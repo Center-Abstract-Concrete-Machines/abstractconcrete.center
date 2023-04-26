@@ -21,6 +21,15 @@
   height: 50%;
 }
 
+.x-div {
+  border-color: rgba(45, 45, 42, 1);
+}
+
+.x {
+  text-align: right;
+  background-color: rgba(239, 131, 84, 1);
+}
+
 html,
 body {
   margin: 0;
