@@ -26,11 +26,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Righteous&family=Roboto+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <script src="assets/js/p5.min.js"></script>
 
     <script src="assets/js/masonry.pkgd.min.js"></script>
@@ -45,7 +46,7 @@
     </div>
 
     <script src="assets/js/sketch.js"></script>
-    <script src="assets/js/cloud.js"></script>
+
     <script src="assets/js/particle.js"></script>
     <script src="assets/js/drawer.js"></script>
 
@@ -56,6 +57,17 @@
         itemSelector: ".grid-item",
         percentPosition: true,
       });
+      msnry.layout();
+    </script>
+    <script defer src="assets/js/cloud.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/bigtext.js"></script>
+    <script>
+      bigTextLoad();
       msnry.layout();
     </script>
   </body>

@@ -7,13 +7,19 @@ layout: base.njk
 <div id="spacer"></div>
 <div class="grid">
   <div class="grid-sizer"></div>
-  <div class="grid-item">
-    <h1>The Center for Concrete and Abstract Machines</h1>
+  <div class="grid-item grid-item--span biggy">
+    <span class="title">Center for Concrete</span>
+    <span class="title">+ Abstract Machines</span>
   </div>
   {% for e in elements %}
-  <div class="grid-item cloud">
-    <h2>{{ e.title }}</h2>
+  <div class="grid-item">
+    <div class="biggy">
+      <h2>
+        <span class="subtitle">{{ e.title }}</span>
+      </h2>
+    </div>
     <p>{{ e.text }}</p>
   </div>
+  <div class="grid-item grid-spacer cloud"></div>
   {% endfor%}
 </div>

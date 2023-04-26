@@ -55,11 +55,6 @@ function maxWidth(string, width) {
   return sz;
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-  msnry.layout();
-}
-
 function drawText() {
   textMask = createGraphics(bounds.w + 100, bounds.h * 2);
   textMask.noFill();
