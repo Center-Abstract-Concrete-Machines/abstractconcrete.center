@@ -3,51 +3,98 @@ layout: base-bigtext.njk
 title: courses
 ---
 
-<h1>learning summer 2023</h1>
+<div class="grid-item grid-item--span biggy">
+  <span class="title">{{ title }}</span>
+</div>
 
-<div class="grid-item">
+<div class="grid-item grid-item--span">
+  <p>
+    CCAM is a para-academic/institutional context for developing machinic
+    fluency.
+  </p>
+  <h1>summer 2023</h1>
+</div>
+
+<div class="grid-item grid-item--narrow">
   <p>courses</p>
 </div>
+
 {% for c in collections.courses %}
 
-<div class="grid-item">
-  <a href="{{ c.url }}">
+<div class="grid-item grid-item--span" style="display: table">
+  <div style="width: 33%; display: table-cell">
+    <a href="{{ c.url }}">
+      <h2>
+        <span class="nav">{{ c.data.title }}</span>
+      </h2>
+    </a>
+  </div>
+  <div style="width: 33%; display: table-cell">
     <h2>
-      <span class="nav">{{ c.data.title }}</span>
+      <span class="nav">{{ c.data.dates }}</span>
     </h2>
-  </a>
+  </div>
+  <div style="width: 33%; display: table-cell">
+    {% if c.applyBy %}
+    <span class="nav">apply by: {{ c.data.applyBy }}</span>
+    {% endif %}
+  </div>
 </div>
 
 {% endfor%}
 
-<div class="grid-item">
+<div class="grid-item grid-item--narrow">
   <p>workshops</p>
 </div>
-{% for w in collections.workshops %}
+{% for c in collections.workshops %}
 
-<div class="grid-item">
-  <a href="{{ w.url }}">
+<div class="grid-item grid-item--span" style="display: table">
+  <div style="width: 33%; display: table-cell">
+    <a href="{{ c.url }}">
+      <h2>
+        <span class="nav">{{ c.data.title }}</span>
+      </h2>
+    </a>
+  </div>
+  <div style="width: 33%; display: table-cell">
     <h2>
-      {{ w.data.title }}
+      <span class="nav">{{ c.data.dates }}</span>
     </h2>
-  </a>
+  </div>
+  <div style="width: 33%; display: table-cell">
+    <h2>
+      {% if c.applyBy %}
+      <span class="nav">apply by: {{ c.data.applyBy }}</span>
+      {% endif %}
+    </h2>
+  </div>
 </div>
 
 {% endfor%}
 
-<div class="grid-item">
+<div class="grid-item grid-item--narrow">
   <p>working groups</p>
 </div>
-{% for w in collections.workgroup %}
+{% for c in collections.workgroup %}
 
-<div class="grid-item">
-  <a href="{{ w.url }}">
-    <div>
+<div class="grid-item grid-item--span" style="display: table">
+  <div style="width: 33%; display: table-cell">
+    <a href="{{ c.url }}">
       <h2>
-        <span class="nav">{{ w.data.title }}</span>
+        <span class="nav">{{ c.data.title }}</span>
       </h2>
-    </div>
-  </a>
+    </a>
+  </div>
+  <div style="width: 33%; display: table-cell">
+    <h2>
+      <span class="nav">{{ c.data.dates }}</span>
+    </h2>
+  </div>
+  <div style="width: 33%; display: table-cell">
+    {% if c.applyBy %}
+    <span class="nav">apply by: {{ c.data.applyBy }}</span>
+    {% endif %}
+  </div>
 </div>
 
 {% endfor%}

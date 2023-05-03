@@ -47,13 +47,15 @@
     </div>
     {% endif %}
     <div id="content">
-      {{ content | safe }}
+      <div class="grid">
+        {{ content | safe }}
+      </div>
     </div>
 
     <script>
       var msnry = new Masonry(".grid", {
         // options
-        columnWidth: ".grid-sizer",
+        columnWidth: 300,
         itemSelector: ".grid-item",
         percentPosition: true,
       });

@@ -40,6 +40,15 @@
   /* background-color: rgba(238, 229, 233, 0.7); */
 }
 
+.grid-item--wide {
+  width: 600px;
+  /* background-color: rgba(238, 229, 233, 0.7); */
+}
+.grid-item--narrow {
+  width: 300px;
+  /* background-color: rgba(238, 229, 233, 0.7); */
+}
+
 .grid-spacer {
   height: 50%;
 }
@@ -109,7 +118,7 @@ span.title {
 p,
 li {
   font-family: "Roboto Mono", monospace;
-  text-align: justify;
+  text-align: left;
   line-height: 170%;
   font-size: medium;
   font-weight: 600;

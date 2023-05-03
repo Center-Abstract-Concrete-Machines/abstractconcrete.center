@@ -5,6 +5,7 @@ title: gen~ working group
 mode: hybrid
 cost: free
 header: /assets/img/gen.png
+dates: fortnightly
 ---
 
 # gen~ working group

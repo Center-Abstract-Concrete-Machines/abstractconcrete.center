@@ -4,8 +4,8 @@ tags: workshops
 title: >
   DIY eurorack synth workshop 01: enfv + random/chaotic gen
 mode: in-person
-day: Mid July
-endRegistration: 06-01-2023
+dates: Saturday 6.17.23, 1000-1600
+applyBy: 06-01-2023
 header: /assets/img/synth.png
 ---
 
