@@ -1,3 +1,15 @@
+.img-header {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  height: auto;
+}
+
+.description {
+  font-size: small;
+}
+
 .grid-sizer,
 .grid-item {
   width: 33%;
@@ -23,11 +35,20 @@
 
 .x-div {
   border-color: rgba(45, 45, 42, 1);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 10%;
+  z-index: 99;
 }
 
 .x {
+  padding-left: 3vh;
+
+  padding-right: 3vh;
   text-align: right;
-  background-color: rgba(239, 131, 84, 1);
+  font-size: 5vw;
+  background-color: rgba(239, 131, 84, 0.5);
 }
 
 html,
@@ -68,10 +89,11 @@ span.title {
   color: rgba(239, 131, 84, 1);
 }
 
-p {
+p,
+li {
   font-family: "Roboto Mono", monospace;
   line-height: 170%;
-  font-size: large;
+  font-size: medium;
   font-weight: 600;
   color: rgba(239, 131, 84, 1);
 

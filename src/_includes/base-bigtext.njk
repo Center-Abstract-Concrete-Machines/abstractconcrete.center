@@ -32,21 +32,23 @@
       href="https://fonts.googleapis.com/css2?family=Karla&family=Righteous&family=Roboto+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="assets/js/p5.min.js"></script>
 
-    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
 
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="x-div">
+      <a href="/index.html"><h1 class="x">X</h1></a>
+    </div>
+    {% if header %}
+    <div>
+      <img class="img-header" src="{{ header }}" />
+    </div>
+    {% endif %}
     <div id="content">
       {{ content | safe }}
     </div>
-
-    <script src="assets/js/sketch.js"></script>
-
-    <script src="assets/js/particle.js"></script>
-    <script src="assets/js/drawer.js"></script>
 
     <script>
       var msnry = new Masonry(".grid", {
@@ -57,6 +59,7 @@
       });
       msnry.layout();
     </script>
+
     <script
       src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="

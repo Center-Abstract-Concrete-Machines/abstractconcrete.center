@@ -1,0 +1,57 @@
+---
+layout: base-bigtext.njk
+title: courses
+---
+
+<h1>learning summer 2023</h1>
+
+<div class="grid-item">
+  <p>courses</p>
+</div>
+{% for c in collections.courses %}
+
+<div class="grid-item">
+  <a href="{{ c.url }}">
+    <div class="biggy">
+      <h2>
+        <span class="nav">{{ c.data.title }}</span>
+      </h2>
+    </div>
+  </a>
+</div>
+
+{% endfor%}
+
+<div class="grid-item">
+  <p>workshops</p>
+</div>
+{% for w in collections.workshops %}
+
+<div class="grid-item">
+  <a href="{{ w.url }}">
+    <div class="biggy">
+      <h2>
+        <span class="nav">{{ w.data.title }}</span>
+      </h2>
+    </div>
+  </a>
+</div>
+
+{% endfor%}
+
+<div class="grid-item">
+  <p>working groups</p>
+</div>
+{% for w in collections.workgroup %}
+
+<div class="grid-item">
+  <a href="{{ w.url }}">
+    <div class="biggy">
+      <h2>
+        <span class="nav">{{ w.data.title }}</span>
+      </h2>
+    </div>
+  </a>
+</div>
+
+{% endfor%}
