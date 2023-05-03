@@ -1,32 +1,44 @@
 ---
 layout: course.njk
 tags: workshops
-title: DIY eurorack synth workshop
+title: >
+  DIY eurorack synth workshop 01: enfv + random/chaotic gen
 mode: in-person
 day: Mid July
 endRegistration: 06-01-2023
 header: /assets/img/synth.png
 ---
 
-# DIY Eurorack Synth Workshop
+# DIY Eurorack Synth Workshop 01: Envelope Follower & Random CV/Audio Generator
 
 ## purpose
 
-This full-day workshop is intended to give participants a solid grounding in the technical mentality and skills required to construct a DIY eurorack module. In the hands-on portion of the workshop, we will walk participants through the construction of their own two synth modules: a [pico envelope follower based on a design by Bumm Bumm Garage](https://www.bummbummgarage.com/modules/envelope-follower/) and a random and chaotic oscillator based on [Erica's Synth Swamp](https://www.ericasynths.lv/shop/discontinued-products/diy-swamp/). The Swamp inherits from the [Wiard Wogglebug](https://learningmodular.com/glossary/wogglebug/) and the [Buchla Source of Uncertainty](https://learningmodular.com/glossary/source-of-uncertainty/).
+This full-day workshop is intended to give participants a solid grounding in the technical mentality and skills required to construct a DIY eurorack module. In the hands-on portion of the workshop, we will walk participants through the construction of their own two synth modules:
+
+- a pico [2HP] envelope follower
+- a random CV/audio generator
+
+The pico envelope follower is [based on a design by Bumm Bumm Garage](https://www.bummbummgarage.com/modules/envelope-follower/). The random and chaotic oscillator is based on [Erica's Synth Swamp](https://www.ericasynths.lv/shop/discontinued-products/diy-swamp/). The Swamp inherits from the [Wiard Wogglebug](https://learningmodular.com/glossary/wogglebug/) and the [Buchla Source of Uncertainty](https://learningmodular.com/glossary/source-of-uncertainty/).
 
 In addition to this walk-through, we will teach some practical skills related to soldering, sourcing and pricing materials based on a BOM, troubleshooting, and other precautions related to constructing DIY synth modules.
 
-## Logistics
+We hope to continuing offering such workshops, exploring other synthesis and DIY techniques.
 
-### Cost
+## logistics
 
-The cost for the workshop is $150 which includes the complete kits for the two synth modules. Because we are sourcing materials in bulk, in advance, and directly from manufacturer when possible, this price compares favorably to buying a DIY kit individually.
+### cost
 
-### Enrollment
+The cost for the workshop is $160 which includes the complete kits for the two synth modules. Because we are sourcing materials in bulk, in advance, and directly from manufacturer when possible, this price compares favorably to buying a DIY kit individually.
 
-Enrollment is strictly capped at 10 participants due to space and material constraints. If there is interest exceeding the cap, we may repeat the workshop.
+### enrollment
 
-**You need to bring your own soldering iron and helping hands**. Limited solder, flux, and de-soldering wick will be available. If you do not own a soldering iron, we recommend [this kit from Amazon](https://www.amazon.com/Soldering-Kit-Temperature-Desoldering-Electronics/dp/B07GTGGLXN/ref=sr_1_7?crid=3V2T0W59ICL46&keywords=soldering+kit&qid=1683133029&sprefix=soldering+kit%2Caps%2C174&sr=8-7).
+Enrollment is strictly capped at 10 participants due to space and material constraints. If there is interest exceeding the cap, we may repeat the workshop. We hope to continuing offering DIY synth workshops; this initial workshop will help us build a material and curricular foundation and purchase more equipment for future sessions.
+
+### materials
+
+All electronics components for the synth build are provided in the cost. You
+
+**You will, however, need to bring your own soldering iron and helping hands**. Limited solder, flux, and de-soldering wick will be available. If you do not own a soldering iron, we recommend [this kit from Amazon](https://www.amazon.com/Soldering-Kit-Temperature-Desoldering-Electronics/dp/B07GTGGLXN/ref=sr_1_7?crid=3V2T0W59ICL46&keywords=soldering+kit&qid=1683133029&sprefix=soldering+kit%2Caps%2C174&sr=8-7).
 
 ## Open Source Hardware/Software Statement
 

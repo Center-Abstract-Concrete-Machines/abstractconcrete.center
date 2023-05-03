@@ -22,6 +22,7 @@ We graciously accept donations of equipment related to the sonic and responsive 
 - misc. eurorack components (power supplies, rackmounts, etc.)
 - projectors, LCD screens
 - (modern, 5 years or more recent) PCs, Macs, desktops, laptops
+- 3D printers, other CNCs
 
 ## Time Donations
 

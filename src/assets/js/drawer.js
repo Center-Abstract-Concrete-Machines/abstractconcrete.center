@@ -60,7 +60,7 @@ function drawText() {
   textMask.noFill();
   textCol2.setAlpha(80);
   textMask.stroke(textCol2);
-  textMask.strokeWeight(15);
+  textMask.strokeWeight(pix * 2);
 
   for (let p = 0; p < points2.length; p++) {
     if (p > 0) {

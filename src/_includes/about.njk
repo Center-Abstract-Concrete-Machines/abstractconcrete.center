@@ -9,14 +9,16 @@ layout: base-bigtext.njk
     <span class="title">{{ title }}</span>
   </div>
   {% for e in elements %}
-  <div class="grid-item">
+  <div class="grid-item" style="width: {{ e.width }}px">
     <div class="biggy">
       <h2>
-        <span class="subtitle">{{ e.title }}</span>
+        <span>{{ e.title }}</span>
       </h2>
     </div>
-    <p>{{ e.text }}</p>
+    {% for p in e.text%}
+    <p>{{ p }}</p>
+    {% endfor %}
   </div>
-  <div class="grid-item grid-spacer cloud"></div>
+
   {% endfor%}
 </div>

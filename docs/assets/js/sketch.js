@@ -24,6 +24,12 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   msnry.layout();
+  pix =
+    Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    ) / 20;
+
   for (let c of clouds) {
     c.getPos();
     c.show();

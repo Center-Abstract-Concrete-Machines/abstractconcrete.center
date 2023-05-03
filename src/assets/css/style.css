@@ -12,7 +12,18 @@
 
 .grid-sizer,
 .grid-item {
-  width: 33%;
+  width: 300px;
+}
+
+.grid {
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #spacer {
@@ -82,6 +93,12 @@ h2 {
   color: rgba(45, 45, 42, 1);
 }
 
+h3 {
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  color: rgba(45, 45, 42, 1);
+}
+
 span.title {
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
@@ -92,6 +109,7 @@ span.title {
 p,
 li {
   font-family: "Roboto Mono", monospace;
+  text-align: justify;
   line-height: 170%;
   font-size: medium;
   font-weight: 600;
