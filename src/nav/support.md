@@ -14,6 +14,8 @@ Financial donations are graciously accepted, but as of publication of this page,
 
 We graciously accept donations of equipment related to the sonic and responsive media arts. Some currently needs are:
 
+- whiteboards
+- folding chairs and tables
 - pen plotter
 - risographic duplicator
 - B/W or color laser printer
