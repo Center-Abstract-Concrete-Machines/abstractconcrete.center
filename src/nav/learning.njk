@@ -3,8 +3,8 @@ layout: page.njk
 title: learning
 ---
 
-
-  <div class="grid-item grid-item--span">
+<div class="row">
+  <div class="col-12">
     <p>
       CCAM is a para-academic/institutional context for developing machinic
       fluency. Read out <a href="faq/index.html">Learning FAQ</a> for more info.
@@ -13,10 +13,8 @@ title: learning
   </div>
 </div>
 
-
-
 <div class="col-12">
-  <h2 class = "subtitle">courses</h2>
+  <h2 class="subtitle">courses</h2>
 </div>
 
 {% for c in collections.courses %}
@@ -35,26 +33,25 @@ title: learning
       {{ c.data.dates }}
     </p>
     {% if c.data.applyBy %}
-    <p style="text-align: center"><strong >apply by: {{ c.data.applyBy }}
-    </strong></p>
-      {% endif %}
+    <p style="text-align: center">
+      <strong>apply by: {{ c.data.applyBy }} </strong>
+    </p>
+    {% endif %}
   </div>
 
- {% if loop.last != true%}
+  {% if loop.last != true%}
   <div class="col-12 m-1">
-    <div style = "width:50%;margin-left: auto;margin-right: auto;">
-      <p style = "text-align: center;">
-        ...</p>
+    <div style="width: 50%; margin-left: auto; margin-right: auto">
+      <p style="text-align: center">...</p>
     </div>
   </div>
-{%endif%}
-
+  {%endif%}
 </div>
 
 {% endfor%}
 
 <div class="col-12">
-  <h2 class = "subtitle">workshops</h2>
+  <h2 class="subtitle">workshops</h2>
 </div>
 {% for c in collections.workshops %}
 
@@ -72,55 +69,51 @@ title: learning
       {{ c.data.dates }}
     </p>
     {% if c.data.applyBy %}
-    <p style="text-align: center"><strong >apply by: {{ c.data.applyBy }}
-    </strong></p>
-      {% endif %}
-  </div>
-
- {% if loop.last != true%}
-  <div class="col-12 m-1">
-    <div style = "width:50%;margin-left: auto;margin-right: auto;">
-      <p style = "text-align: center;">
-        ...</p>
-    </div>
-  </div>
-{%endif%}
-
-
-{% endfor%}
-
-<div class="col-12">
-  <h2 class = "subtitle">working groups</h2>
-</div>
-{% for c in collections.workgroup %}
-
-<div class="row">
-  <div class="col-sm-5 m-1">
-    <a href="{{ c.url }}">
-      <h2>
-        <span>{{ c.data.title }}</span>
-      </h2>
-    </a>
-  </div>
-
-  <div class="col-sm-5 m-1">
     <p style="text-align: center">
-      {{ c.data.dates }}
+      <strong>apply by: {{ c.data.applyBy }} </strong>
     </p>
-    {% if c.data.applyBy %}
-    <p style="text-align: center"><strong >apply by: {{ c.data.applyBy }}
-    </strong></p>
-      {% endif %}
+    {% endif %}
   </div>
 
- {% if loop.last != true%}
+  {% if loop.last != true%}
   <div class="col-12 m-1">
-    <div style = "width:50%;margin-left: auto;margin-right: auto;">
-      <p style = "text-align: center;">
-        ...</p>
+    <div style="width: 50%; margin-left: auto; margin-right: auto">
+      <p style="text-align: center">...</p>
     </div>
   </div>
-{%endif%}
+  {%endif%} {% endfor%}
 
+  <div class="col-12">
+    <h2 class="subtitle">working groups</h2>
+  </div>
+  {% for c in collections.workgroup %}
 
-{% endfor%}
+  <div class="row">
+    <div class="col-sm-5 m-1">
+      <a href="{{ c.url }}">
+        <h2>
+          <span>{{ c.data.title }}</span>
+        </h2>
+      </a>
+    </div>
+
+    <div class="col-sm-5 m-1">
+      <p style="text-align: center">
+        {{ c.data.dates }}
+      </p>
+      {% if c.data.applyBy %}
+      <p style="text-align: center">
+        <strong>apply by: {{ c.data.applyBy }} </strong>
+      </p>
+      {% endif %}
+    </div>
+
+    {% if loop.last != true%}
+    <div class="col-12 m-1">
+      <div style="width: 50%; margin-left: auto; margin-right: auto">
+        <p style="text-align: center">...</p>
+      </div>
+    </div>
+    {%endif%} {% endfor%}
+  </div>
+</div>

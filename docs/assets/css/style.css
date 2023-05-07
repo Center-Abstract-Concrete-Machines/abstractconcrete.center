@@ -38,8 +38,8 @@
   top: 10px;
   right: 10%;
   z-index: 99;
-  height: 5vh;
-  width: 5vh;
+  height: 45px;
+  width: 50px;
 }
 
 .x-div-2 {
@@ -52,7 +52,7 @@
 }
 
 .x {
-  font-size: 3vh;
+  font-size: 20;
   top: 50%;
 }
 

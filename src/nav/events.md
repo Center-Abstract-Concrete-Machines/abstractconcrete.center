@@ -4,15 +4,12 @@ title: events
 ---
 
 <div class="row" data-masonry='{"percentPosition": true }'>
-  {% for e in elements %}
-  <div class="col-xs-7 col-sm-5 col-md-4 py-1">
-    <h3>{{ e.title }}</h3>
-
-    {% for p in e.text%}
-
-    <p>{{ p }}</p>
-
-    {% endfor %}
+  {% for e in collections.events %}
+  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-1" style = "border-style:solid;border-weight:0.5px">
+    <img class="img-fluid" src = "{{e.data.img}}">
+    <h3>{{ e.data.title }}</h3>
+    <p>{{e.data.type }} | {{ e.data.datetime }}</p>
+    <p>{{ e.data.location }}</p>
 
   </div>
   {% endfor%}
