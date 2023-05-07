@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="CCAM looks to make paths for technical and theoretical exchange with practitioners and theorists in the media arts and sciences and other diagrmamatic media arts around the world."
+    />
     <meta name="author" content="Garrett Laroy Johnson" />
     <title>support</title>
     <style>
@@ -26,69 +32,82 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla&family=Righteous&family=Roboto+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <script src="/assets/js/masonry.pkgd.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="x-div">
-      <a href="/index.html"><h1 class="x">X</h1></a>
+  <body onLoad="bigTextLoad()">
+    <div class="container">
+      
+<div class="x-div">
+  <a href="/index.html">
+    <div class="x-div-2">
+      <h1 class="x">X</h1>
     </div>
-    
-    <div>
-      <img class="img-header" src="/assets/img/cinci.jpg" />
-    </div>
-    
-    <div id="content">
-      <div class="grid">
-        <p>CCAM is seeking not-for-profit status. As an extra-institutional organization, it relies on fundraising and donations to maintain a physical space, to pay for organizational labor, and provide resources to artists in their continuing education and residency opportunities.</p>
-<h2>Financial donations</h2>
+  </a>
+</div>
+
+
+<div class="row" data-masonry='{"percentPosition": true }'>
+  <div class="col-12 biggy">
+    <span class="title">support</span>
+  </div>
+</div>
+<p>CCAM is seeking not-for-profit status. As an extra-institutional organization, it relies on fundraising and donations to maintain a physical space, to pay for organizational labor, and provide resources to artists in their continuing education and residency opportunities.</p>
+<h2>financial donations</h2>
 <p>Financial donations are graciously accepted, but as of publication of this page, we are not currently a 501(c)(3) and so they have no tax deductible status. We hope to ammend that soon -- even applying for 501(c)(3) costs money though!</p>
-<h2>Equipment and Books donations</h2>
+<h2>equipment and books donations</h2>
 <p>We graciously accept donations of equipment related to the sonic and responsive media arts. Some currently needs are:</p>
 <ul>
+<li>whiteboards</li>
+<li>folding chairs and tables</li>
 <li>pen plotter</li>
 <li>risographic duplicator</li>
 <li>B/W or color laser printer</li>
+<li>art, theory, design, making, and computation books</li>
+<li>oscilloscope and other measurement devices</li>
 <li>soldering irons &amp; helping hands, other soldering supplies</li>
 <li>speakers &amp; amplifiers</li>
-<li>misc. eurorack components (power supplies, rackmounts, etc.)</li>
+<li>game controllers and other hackables</li>
+<li>misc. eurorack components (power supplies, rackmounts, non-functioning modules, etc.)</li>
 <li>projectors, LCD screens</li>
 <li>(modern, 5 years or more recent) PCs, Macs, desktops, laptops</li>
 <li>3D printers, other CNCs</li>
 </ul>
-<h2>Time Donations</h2>
+<h2>time donations</h2>
 <p>Our most valueable resource. As we soft launch, much of CCAM runs on a labor of love. If you have an idea for programming that shares your perspective and skillset, please reach out via our contact page.</p>
 
-      </div>
-    </div>
 
-    <script>
-      var msnry = new Masonry(".grid", {
-        // options
-        columnWidth: 300,
-        itemSelector: ".grid-item",
-        percentPosition: true,
-      });
-      msnry.layout();
-    </script>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="/assets/js/bigtext.js"></script>
     <script>
       bigTextLoad();
-      msnry.layout();
     </script>
   </body>
 </html>

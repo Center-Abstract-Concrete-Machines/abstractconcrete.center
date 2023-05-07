@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+
+{% if header %}
+<div>
+  <img class="img-header grid-item" src="{{ header }}" />
+</div>
+{% endif %}
+
+{{ content | safe }}

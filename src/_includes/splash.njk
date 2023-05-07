@@ -3,23 +3,27 @@ layout: base.njk
 ---
 
 {# space holder for animation #}
-
-<div id="spacer"></div>
-<div class="grid">
-  <div class="grid-sizer"></div>
-  <div class="grid-item grid-item--span biggy">
+<div id="splash">
+  <div id="spacer"></div>
+  <div class="biggy">
     <span class="title">Center for Concrete</span>
     <span class="title">+ Abstract Machines</span>
   </div>
-  {% for n in collections.nav %}
-  <div class="grid-item">
-    <a href="{{ n.url }}">
-      <div class="biggy">
-        <h2>
-          <span class="nav">{{ n.data.title }}</span>
-        </h2>
-      </div>
-    </a>
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    {% for n in collections.nav %}
+    <div class="col-12">
+      <a href="{{ n.url }}">
+        <div class="biggy">
+          <h2>
+            <span class="nav">{{ n.data.title }}</span>
+          </h2>
+        </div>
+      </a>
+    </div>
+    {% endfor%}
   </div>
-  {% endfor%}
+  <script src="/assets/js/sketch.js"></script>
+
+  <script src="/assets/js/particle.js"></script>
+  <script src="/assets/js/drawer.js"></script>
 </div>

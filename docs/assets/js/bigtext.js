@@ -6,7 +6,6 @@ function bigTextLoad() {
   let biggies = document.getElementsByClassName("biggy");
   for (b = 0; b < biggies.length; b++) {
     $(biggies[b]).bigtext();
-    console.log(biggies[b]);
   }
 }
 (function (window, $) {

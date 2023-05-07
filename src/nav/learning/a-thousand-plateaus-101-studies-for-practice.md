@@ -5,7 +5,7 @@ tags: "courses"
 title: >
   a thousand plateaus 101: studies for practice, practices for study
 header: /assets/img/score.jpg
-dates: Wednesdays 1800-2100, 6.14.23-8.2.23 [except July 5]
+dates: wednesdays 1800-2100, 6.14.23-8.2.23 [except July 5]
 applyBy: 6.1.23
 ---
 

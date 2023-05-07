@@ -1,0 +1,9 @@
+- integrate bootstrap for mobile view [done[]
+- add footer w/ link to insta
+- add next / previous to learning modules
+- add learning FAQ
+- add events
+- add Addby to learning page
+- change link colors [done]
+- recenter CCAM animation
+- create Creating Coding page
