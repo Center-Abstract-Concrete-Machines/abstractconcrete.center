@@ -2,7 +2,8 @@
 layout: subpage.njk
 datetime: 07.04.2023
 title: >
-  (in)formal (in)formations: tactics and infrastructure for under common gathering
+  (in)formal (in)formations
+subtitle: tactics and infrastructure for under common gathering
 type: symposium
 location: TBA, NYC
 img: /assets/img/phun-paper-2.jpg

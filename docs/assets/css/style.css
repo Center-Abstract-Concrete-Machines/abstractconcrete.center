@@ -70,7 +70,7 @@ body {
   padding: 0;
 }
 body {
-  background-color: #fffbf1;
+  background-color: rgb(255, 251, 241);
 }
 
 canvas {
@@ -115,6 +115,12 @@ span.subtitle {
   font-family: "Roboto Mono", monospace;
 }
 
+h5.learning {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: rgba(45, 45, 42, 1);
+}
+
 h2.subtitle {
   color: rgba(239, 131, 84, 1);
   background-color: rgba(242, 235, 241, 0.8);
@@ -133,4 +139,20 @@ a:visited {
 a:hover {
   color: rgba(242, 235, 241, 0.8);
   background-color: rgba(239, 131, 84, 1);
+}
+
+.event.filter {
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.event.filter:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+.filter-overlay {
+  background-color: rgba(239, 131, 84, 0.1);
+}
+
+a.event {
+  color: rgba(45, 45, 42, 1);
 }

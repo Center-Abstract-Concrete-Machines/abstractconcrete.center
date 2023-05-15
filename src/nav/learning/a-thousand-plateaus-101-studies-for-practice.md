@@ -1,17 +1,20 @@
 ---
 layout: course.njk
 mode: hybrid
-tags: "courses"
-title: >
-  a thousand plateaus 101: studies for practice, practices for study
-header: /assets/img/score.jpg
-dates: wednesdays 1800-2100, 6.14.23-8.2.23 [except July 5]
+tags:
+  - courses
+  - events
+title: a thousand plateaus 101
+subtitle: studies for practice, practices for study
+img: /assets/img/score.jpg
+datetime: wednesdays 1800-2100, 6.14.23-8.2.23
+sketch: /assets/js/atp.js
 applyBy: 6.1.23
 ---
 
 # A Thousand Plateaus 101: Studies for Practice, Practices for Study
 
-DATES: {{dates}}
+DATES: {{datetime}} [except July 5]
 
 LOCATION: Hybrid; in-person in Pilsen, Chicago, IL OR on Zoom
 

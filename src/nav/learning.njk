@@ -13,93 +13,29 @@ title: learning
   </div>
 </div>
 
+{% set categories = ["courses","workshops", "working group"] %} {% for category
+in categories %}
 <div class="col-12">
-  <h2 class="subtitle">courses</h2>
+  <h2 class="subtitle">{{ category }}</h2>
 </div>
 
-{% for c in collections.courses %}
-
-<div class="row">
-  <div class="col-sm-5 m-1">
-    <a href="{{ c.url }}">
-      <h2>
-        <span>{{ c.data.title }}</span>
-      </h2>
-    </a>
-  </div>
-
-  <div class="col-sm-5 m-1">
-    <p style="text-align: center">
-      {{ c.data.dates }}
-    </p>
-    {% if c.data.applyBy %}
-    <p style="text-align: center">
-      <strong>apply by: {{ c.data.applyBy }} </strong>
-    </p>
-    {% endif %}
-  </div>
-
-  {% if loop.last != true%}
-  <div class="col-12 m-1">
-    <div style="width: 50%; margin-left: auto; margin-right: auto">
-      <p style="text-align: center">...</p>
-    </div>
-  </div>
-  {%endif%}
-</div>
-
-{% endfor%}
-
-<div class="col-12">
-  <h2 class="subtitle">workshops</h2>
-</div>
-{% for c in collections.workshops %}
-
-<div class="row">
-  <div class="col-sm-5 m-1">
-    <a href="{{ c.url }}">
-      <h2>
-        <span>{{ c.data.title }}</span>
-      </h2>
-    </a>
-  </div>
-
-  <div class="col-sm-5 m-1">
-    <p style="text-align: center">
-      {{ c.data.dates }}
-    </p>
-    {% if c.data.applyBy %}
-    <p style="text-align: center">
-      <strong>apply by: {{ c.data.applyBy }} </strong>
-    </p>
-    {% endif %}
-  </div>
-
-  {% if loop.last != true%}
-  <div class="col-12 m-1">
-    <div style="width: 50%; margin-left: auto; margin-right: auto">
-      <p style="text-align: center">...</p>
-    </div>
-  </div>
-  {%endif%} {% endfor%}
-
-  <div class="col-12">
-    <h2 class="subtitle">working groups</h2>
-  </div>
-  {% for c in collections.workgroup %}
-
+<ul>
+  {% for c in collections[category] %}
   <div class="row">
     <div class="col-sm-5 m-1">
       <a href="{{ c.url }}">
         <h2>
           <span>{{ c.data.title }}</span>
         </h2>
+        <h5 class="learning">
+          <span>{{ c.data.subtitle }}</span>
+        </h5>
       </a>
     </div>
 
     <div class="col-sm-5 m-1">
       <p style="text-align: center">
-        {{ c.data.dates }}
+        {{ c.data.datetime }}
       </p>
       {% if c.data.applyBy %}
       <p style="text-align: center">
@@ -114,6 +50,9 @@ title: learning
         <p style="text-align: center">...</p>
       </div>
     </div>
-    {%endif%} {% endfor%}
+    {%endif%}
   </div>
-</div>
+
+  {% endfor %}
+</ul>
+{% endfor %}

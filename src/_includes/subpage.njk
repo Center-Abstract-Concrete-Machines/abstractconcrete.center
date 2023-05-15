@@ -2,10 +2,24 @@
 layout: base.njk
 ---
 
-{% if header %}
-<div>
-  <img class="img-header grid-item" src="{{ header }}" />
-</div>
+{% if sketch %}
+<style>
+  .content {
+    background-color: rgba(255, 251, 241, 0.8);
+  }
+</style>
 {% endif %}
 
-{{ content | safe }}
+<div class="content">
+  {% if header %}
+  <div>
+    <img class="img-header grid-item" src="{{ header }}" />
+  </div>
+  {% endif %}
+
+  {{ content | safe }}
+</div>
+
+{% if sketch %}
+<script src="{{ sketch }}"></script>
+{% endif %}

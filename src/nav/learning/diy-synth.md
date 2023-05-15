@@ -1,12 +1,20 @@
 ---
 layout: course.njk
-tags: workshops
-title: >
-  DIY eurorack synth workshop 01: enfv + random/chaotic gen
+title: enfv + random/chaotic gen
+subtitle: DIY eurorack synth workshop 01
+location: Pilsen, Chicago
 mode: in-person
-dates: saturday 6.17.23, 1000-1600
+datetime: saturday 6.17.23, 1000-1600
 applyBy: 06.01.23
 header: /assets/img/synth.png
+img: /assets/img/synth-sqr.png
+cost: $160
+tags:
+  - diy
+  - eurorack
+  - events
+  - workshops
+  - learning
 ---
 
 # DIY Eurorack Synth Workshop 01: Envelope Follower & Random CV/Audio Generator
