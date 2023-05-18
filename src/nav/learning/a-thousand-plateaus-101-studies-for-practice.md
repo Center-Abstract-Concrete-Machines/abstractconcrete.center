@@ -36,17 +36,13 @@ This course will be conducted for both true beginners of philosophy and Deleuze 
 
 A Thousand Plateaus, the second co-written text by activist philosopher and clinical psychologist Felix Guattari and Gilles Deleuze, is a wild text representing the sustained collaboration of two very different and seemingly incompatible minds. Before meeting Guattari, Deleuze's work was characterized as rigorous yet provocative readings of the history of philosophy, in which he would "take a philosopher from behind and give them a child they wouldn't recognize". Guattari was an activist and psychoanalyst working clinically and experimentally at La Borde, a Parasian countryside for schizophrenics. Guattari, always keen for gathering and connecting ensembles of philosophers, activists, and thinkers, was recruited by Delueze into this truly unique dyadic thinking-making machine.
 
-This class is an intro to deep transdisciplinarity
-
-Their four collaborative texts represent their omnivorous and insatiable appetite for systems of thought and practice as well as
-
-traversing and careen through discplinary walls, including art, classical and electronic music, literature, biology, psychoanalysis, thermodynamics, topological mathematics, linguistics and semiotics, theatre, physics, cybernetics, computation, film and cinema, and politics to name a few.
+This class is an intro to deep transdisciplinarity: Deleuze and Guattari's four collaborative texts represent their omnivorous and insatiable appetite for systems of thought and practice as well as, traversing and careen through discplinary walls, including art, classical and electronic music, literature, biology, psychoanalysis, thermodynamics, topological mathematics, linguistics and semiotics, theatre, physics, cybernetics, computation, film and cinema, and politics to name a few.
 
 The reputation truly precedes it. On the one hand, the work has been deried as obtuse and esoteric and accused of misusing concepts borrowed from scientific disciplines. On the other, it continues to serve artists, writers, and scholars as a wellspring of generative and provocative concepts and affects almost half a century after its publication. The rhizomatic image of thought, the line of flight, becoming-woman, the body without organs, the assemblage, and the virtual pockmark many artist descriptions, literary criticisms, and even business management scholarship. Familiar concepts such as the refrain, territory, and chaos take on dynamic meanings in Deleuze and Guattari's far-from-equilibrium systems of thought.
 
 ## Instructor Bio
 
-Garrett Laroy Johnson first read the Rhizome in 2015 and fell into it. Since, Deleuze and Guattari have come to very different things in his work. He has a deep appreciation for how the text reveals new puzzles and mysteries as others are unlocked. For Garrett, the most important challenge is how to make the text useful in their media art research practice.
+Garrett Laroy Johnson first read the Rhizome in 2015 and fell into it. Since, Deleuze and Guattari have come to very different things in his work. He has a deep appreciation for how the text reveals new puzzles, riddles, and mysteries as others are unlocked. For Garrett, the text's most important imperative is how to make the text useful in their media art research practice.
 
 #### footnotes:
 
