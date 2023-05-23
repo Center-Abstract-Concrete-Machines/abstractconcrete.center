@@ -32,9 +32,9 @@ elements:
       - The concept of concrete and abstract machines allows us to think art-research and its stakes. Perhaps the most contemporary and relevant caveat emerging from this way of thinking comes to us in what Alfred North Whitehead calls "the fallacy of misplaced concreteness", in which we mistake what is thought for what is.
 ---
 
-<div class="row" data-masonry='{"percentPosition": true }'>
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
   {% for e in elements %}
-  <div class="col-xs-7 col-sm-5 col-md-4 py-1">
+  <div class="item col-xs-7 col-sm-5 col-md-4 py-1">
     <h3>{{ e.title }}</h3>
 
     {% for p in e.text%}

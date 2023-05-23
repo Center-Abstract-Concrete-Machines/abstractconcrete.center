@@ -28,9 +28,15 @@ APPLY: By 5/31/23
 
 COST: 400 USD. One 50% TA available after enrollment threshold.
 
+## description
+
+In this seminar, we will chart a path through the 1000 plateaus. We will not see it all, because every pass finds itself on a fresh path. Since, the authors invite us to start with any of the chapters and proceed according to our curiosity, we will create a collective flightplan under the guidance of the guide. There will be detours, there will be delays. We will ascribe to a practice of close reading, which hedges a bet that there is more to get out of spending an hour on a page than on 10.
+
+Each session will start with an introduction to that section of the text. Optionally, participants can elect to introduce a part of the text. The instructor will provide supplementary study materials for each section of the text that will serve as a guide not only for the course but for future readings.
+
 ## extended description
 
-In this 8-session course, we will work through key sections of A Thousand Plateaus. CCAM's selection of ATP as the basis of their first seminar is not incidental. Indeed, Deleuze once wrote "where to begin in philosophy has always - rightly - been regarded as a very delicate problem"[0]. The text models creative inquiry or inquiring creation that is unapologetically non-deferential to creativity or inquiry. This deep transdisciplinarity is borne out in myriad scholars and artists who have taken up the arrows shot by Deleuze and Guattari [1]. D&G's characterization of philosophy as the creation of concepts make it a clear friend to artists, designers, musicians, and dancers wishing to deepen their work's intellectual project. Crosswise, it affords the possibility for creative impulse (what Brian Massumi calls the "shock to thought") to writers and humanists. In short, we will pursue what it means to generate theoretical studies for practice as well as practices for study.
+In this 8-session seminar, we will work through key sections of A Thousand Plateaus. CCAM's selection of ATP as the basis of their first seminar is not incidental. Indeed, Deleuze once wrote "where to begin in philosophy has always - rightly - been regarded as a very delicate problem"[0]. The text models creative inquiry or inquiring creation that is unapologetically non-deferential to creativity or inquiry. This deep transdisciplinarity is borne out in myriad scholars and artists who have taken up the arrows shot by Deleuze and Guattari [1]. D&G's characterization of philosophy as the creation of concepts make it a clear friend to artists, designers, musicians, and dancers wishing to deepen their work's intellectual project. Crosswise, it affords the possibility for creative impulse (what Brian Massumi calls the "shock to thought") to writers and humanists. In short, we will pursue what it means to generate theoretical studies for practice as well as practices for study.
 
 This course will be conducted for both true beginners of philosophy and Deleuze and Guattari as well for those returning to the text with a beginner spirit. Deleuze also characterized philosophy not as a guidebook but as a "tool box". In this sense we will learn and practice expressive techniques of some of these conceptual tools. With an eye for safety we will heed Deleuze and Guattari's many caveats. Practiced in and outside of class, a crucial outcome of the course will be facility with close reading. Close reading can be understood as an analytic, reflective, and discursive practice that seeks understanding of how the text's machines of thought work -- before plugging them into our own machines to make them useful elsewhere.
 
@@ -46,4 +52,5 @@ Garrett Laroy Johnson first read the Rhizome in 2015 and fell into it. Since, De
 
 #### footnotes:
 
-1.  Erin Manning, Brian Massumi, the Senselab and the Three Ecologies Institute; Steve Goodman (Kode9) and HyperDub Records, Édouard Glissant
+0. Gilles Deleuze, "The Image of Thought," in Difference and Repetition, trans. Paul Patton 1994.
+1. Erin Manning, Brian Massumi, the Senselab and the Three Ecologies Institute; Steve Goodman (Kode9) and HyperDub Records, Édouard Glissant.

@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="CCAM looks to make paths for technical and theoretical exchange with practitioners and theorists in the media arts and sciences and other diagrammatic media arts around the world."
+      content="CCAM makes paths for technical and theoretical exchange with practitioners and theorists in the media arts and sciences and other diagrammatic media arts around the world."
     />
     <meta name="author" content="Garrett Laroy Johnson" />
     <title>events</title>
@@ -64,13 +64,13 @@
 </div>
 
 
-<div class="row" data-masonry='{"percentPosition": true }'>
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
   <div class="col-12 biggy">
     <span class="title">events</span>
   </div>
 </div>
-<div class="row" data-masonry='{"percentPosition": true }'>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/learning/a-thousand-plateaus-101-studies-for-practice/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "/assets/img/score.jpg">
 <h3>a thousand plateaus 101</h3>
@@ -79,7 +79,7 @@
 <p></p></p>
   </a>
   </div>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/learning/diy-synth/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "/assets/img/synth-sqr.png">
 <h3>enfv + random/chaotic gen</h3>
@@ -88,7 +88,7 @@
 <p>Pilsen, Chicago</p></p>
   </a>
   </div>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/learning/gen/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "/assets/img/gen-sqr.png">
 <h3>gen~ working group</h3>
@@ -97,7 +97,7 @@
 <p>Pilsen, Chicago / online</p></p>
   </a>
   </div>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/learning/intro-to-programming-for-artists/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "">
 <h3>programming for artists</h3>
@@ -106,7 +106,7 @@
 <p></p></p>
   </a>
   </div>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/events/bleepbloopweewoo/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "/assets/img/bleep.png">
 <h3>Bleep Bloop Wee Woo</h3>
@@ -115,7 +115,7 @@
 <p>Chicago</p></p>
   </a>
   </div>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/events/informal-informations/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "/assets/img/phun-paper-2.jpg">
 <h3>(in)formal (in)formations</p>
@@ -125,7 +125,7 @@
     <p>TBA, NYC</p>
   </a>
   </div>
-  <div class="col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
+  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
 <p><a href = /nav/events/dispersionology/ class = "event"></p>
 <p><img class="img-fluid event filter" src = "/assets/img/dispersionology.jpg">
 <h3>dispersionology &amp; other tales</h3>
@@ -136,6 +136,20 @@
   </div>
 </div>
 
+<script>
+  $(function () {
+    var $wrapper = $(".masonry").imagesLoaded(function () {
+      $wrapper.masonry({
+        itemSelector: ".item",
+      });
+    });
+  });
+  addEventListener("resize", (event) => {
+    ".masonry".masonry({
+      itemSelector: ".item",
+    });
+  });
+</script>
 
     </div>
 
@@ -144,12 +158,14 @@
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/bigtext.js"></script>
+
     <script>
       bigTextLoad();
     </script>

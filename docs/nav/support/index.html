@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="CCAM looks to make paths for technical and theoretical exchange with practitioners and theorists in the media arts and sciences and other diagrammatic media arts around the world."
+      content="CCAM makes paths for technical and theoretical exchange with practitioners and theorists in the media arts and sciences and other diagrammatic media arts around the world."
     />
     <meta name="author" content="Garrett Laroy Johnson" />
     <title>support</title>
@@ -64,7 +64,7 @@
 </div>
 
 
-<div class="row" data-masonry='{"percentPosition": true }'>
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
   <div class="col-12 biggy">
     <span class="title">support</span>
   </div>
@@ -93,6 +93,20 @@
 <h2>time donations</h2>
 <p>Our most valueable resource. As we soft launch, much of CCAM runs on a labor of love. If you have an idea for programming that shares your perspective and skillset, please reach out via our contact page.</p>
 
+<script>
+  $(function () {
+    var $wrapper = $(".masonry").imagesLoaded(function () {
+      $wrapper.masonry({
+        itemSelector: ".item",
+      });
+    });
+  });
+  addEventListener("resize", (event) => {
+    ".masonry".masonry({
+      itemSelector: ".item",
+    });
+  });
+</script>
 
     </div>
 
@@ -101,12 +115,14 @@
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/bigtext.js"></script>
+
     <script>
       bigTextLoad();
     </script>
