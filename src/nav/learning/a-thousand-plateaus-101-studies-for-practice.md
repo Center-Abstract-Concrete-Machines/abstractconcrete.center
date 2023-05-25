@@ -1,20 +1,28 @@
 ---
 layout: course.njk
 mode: hybrid
+location: Chicago or Online
 tags:
   - courses
   - events
+  - current
 title: a thousand plateaus 101
+type: course of study
 subtitle: studies for practice, practices for study
 img: /assets/img/score.jpg
-datetime: wednesdays 1800-2100, 6.14.23-8.2.23
+dateType: range
+dateStart: 2023-07-12
+dateEnd: 2023-08-23
+meetings: wednesdays 1800-2100
+icon: plateau
 sketch: /assets/js/atp.js
-applyBy: 6.1.23
+applyBy: 2023-06-31
+cost: 400
 ---
 
 # A Thousand Plateaus 101: Studies for Practice, Practices for Study
 
-DATES: {{datetime}} [except July 5]
+DATES: {{meetings}}, {{dateStart | postDate }} - {{dateEnd | postDate }}
 
 LOCATION: Hybrid; in-person in Pilsen, Chicago, IL OR on Zoom
 
@@ -24,9 +32,15 @@ INSTRUCTOR: Garrett Laroy Johnson, PhD
 
 GOALS: to cultivate a contemplative study practice adequete to making practice, or otherwise to begin with Deleuze and Guattari, or deepen an understanding of the book.
 
-APPLY: By 5/31/23
+APPLY: By {{applyBy}}
 
-COST: 400 USD. One 50% TA available after enrollment threshold.
+COST: {{cost}}. One 50% TA available after enrollment threshold.
+
+<div style="width:100%;height:100px">
+<div class = "center">
+<button data-tf-popup="JkTTBTsc" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ATP101: Practices for Study, Studies for Practice" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Roboto Mono,mono;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#EF8354;color:#2D2D2A;font-size:20px;border-radius:0px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin-left:40%;text-decoration:none;">Apply</button><script src="//embed.typeform.com/next/embed.js"></script>
+</div>
+</div>
 
 ## description
 

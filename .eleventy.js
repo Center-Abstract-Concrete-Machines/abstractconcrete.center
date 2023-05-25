@@ -1,10 +1,17 @@
+// Import prior to `module.exports` within `.eleventy.js`
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
   // Create the filter function.
   function sortByName(values) {
     let vals = values;
     return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
   }
-
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj)
+      .toUTC()
+      .toLocaleString(DateTime.DATE_MED);
+  });
   eleventyConfig.addWatchTarget("src/assets/js/");
   const FOOTNOTE_MAP = [];
   eleventyConfig.addPairedShortcode(

@@ -38,10 +38,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
-      async
     ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -49,11 +48,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
   <body onLoad="bigTextLoad()">
     <div id="splash"></div>
-    <div class="container">
+    <div class="container-fluid overflow-hidden">
       
 
 <style>
@@ -75,13 +75,18 @@
 
 <div style="width: 60%; margin: auto">
   <h1>A Thousand Plateaus 101: Studies for Practice, Practices for Study</h1>
-<p>DATES: wednesdays 1800-2100, 6.14.23-8.2.23 [except July 5]</p>
+<p>DATES: wednesdays 1800-2100, Jul 12, 2023 - Aug 23, 2023</p>
 <p>LOCATION: Hybrid; in-person in Pilsen, Chicago, IL OR on Zoom</p>
 <p>FOR WHOM: artists, designers, dancers, choreographers, programmers, theorists, experimentalists otherwise. The course will be taught at a graduate/post-graduate level; non-academics, students, graduates, and faculty are welcome.</p>
 <p>INSTRUCTOR: Garrett Laroy Johnson, PhD</p>
 <p>GOALS: to cultivate a contemplative study practice adequete to making practice, or otherwise to begin with Deleuze and Guattari, or deepen an understanding of the book.</p>
-<p>APPLY: By 5/31/23</p>
-<p>COST: 400 USD. One 50% TA available after enrollment threshold.</p>
+<p>APPLY: By Fri Jun 30 2023 19:00:00 GMT-0500 (Central Daylight Time)</p>
+<p>COST: 400. One 50% TA available after enrollment threshold.</p>
+<div style="width:100%;height:100px">
+<div class = "center">
+<button data-tf-popup="JkTTBTsc" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ATP101: Practices for Study, Studies for Practice" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Roboto Mono,mono;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#EF8354;color:#2D2D2A;font-size:20px;border-radius:0px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin-left:40%;text-decoration:none;">Apply</button><script src="//embed.typeform.com/next/embed.js"></script>
+</div>
+</div>
 <h2>description</h2>
 <p>In this seminar, we will chart a path through the 1000 plateaus. We will not see it all, because every pass finds itself on a fresh path. Since, the authors invite us to start with any of the chapters and proceed according to our curiosity, we will create a collective flightplan under the guidance of the guide. There will be detours, there will be delays. We will ascribe to a practice of close reading, which hedges a bet that there is more to get out of spending an hour on a page than on 10.</p>
 <p>Each session will start with an introduction to that section of the text. Optionally, participants can elect to introduce a part of the text. The instructor will provide supplementary study materials for each section of the text that will serve as a guide not only for the course but for future readings.</p>
@@ -109,21 +114,34 @@
 
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-      crossorigin="anonymous"
-    ></script>
+    <script src="/assets/js/bigtext.js"></script>
+
+    <script>
+      bigTextLoad();
+    </script>
+    <script>
+      $(function () {
+        var $container = $(".masonry");
+
+        $container.imagesLoaded(function () {
+          $container.masonry({
+            itemSelector: ".item",
+          });
+        });
+      });
+    </script>
+
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/bigtext.js"></script>
-
-    <script>
-      bigTextLoad();
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
 </html>

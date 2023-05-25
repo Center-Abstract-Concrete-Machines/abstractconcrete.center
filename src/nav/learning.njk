@@ -22,35 +22,65 @@ in categories %}
 <ul>
   {% for c in collections[category] %}
   <div class="row">
-    <div class="col-sm-5 m-1">
+    {% if c.data.published != false %}
+
+    <div class="col-sm-4 p-1">
+      <img src="/assets/img/icons/{{ c.data.icon }}.svg" />
+    </div>
+    <div class="col-sm-4 p-1">
       <a href="{{ c.url }}">
-        <h2>
-          <span>{{ c.data.title }}</span>
-        </h2>
-        <h5 class="learning">
-          <span>{{ c.data.subtitle }}</span>
-        </h5>
+        <div class="center">
+          <h2>
+            <span>{{ c.data.title }}</span>
+          </h2>
+          <h5 class="learning">
+            <span>{{ c.data.subtitle }}</span>
+          </h5>
+        </div>
       </a>
     </div>
 
-    <div class="col-sm-5 m-1">
-      <p style="text-align: center">
-        {{ c.data.datetime }}
-      </p>
-      {% if c.data.applyBy %}
-      <p style="text-align: center">
-        <strong>apply by: {{ c.data.applyBy }} </strong>
-      </p>
-      {% endif %}
+    <div class="col-sm-4 p-1">
+      <div class="center">
+        {% if c.data.dateType == "range"%}
+
+        <p style="text-align: center">
+          {{ c.data.dateStart | postDate }} - {{ c.data.dateEnd | postDate }} |
+          {{ c.data.meetings }}
+        </p>
+
+        {% elif c.data.dateType == "oneoff"%}
+
+        <p style="text-align: center">
+          {{ c.data.date | postDate }} | {{ c.data.meeting }}
+        </p>
+
+        {% elif c.data.dateType == "regular"%}
+
+        <p style="text-align: center">
+          {{ c.data.meetings }}
+        </p>
+
+        {% endif %}
+        <p style="text-align: center">
+          {{ c.data.time }}
+        </p>
+
+        {% if c.data.applyBy %}
+        <p style="text-align: center">
+          <strong>apply by: {{ c.data.applyBy | postDate }} </strong>
+        </p>
+        {% endif %}
+      </div>
     </div>
 
-    {% if loop.last != true%}
+    {% if loop.last != true %}
     <div class="col-12 m-1">
       <div style="width: 50%; margin-left: auto; margin-right: auto">
         <p style="text-align: center">...</p>
       </div>
     </div>
-    {%endif%}
+    {%endif%} {%endif%}
   </div>
 
   {% endfor %}

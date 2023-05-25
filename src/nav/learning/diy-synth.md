@@ -4,10 +4,14 @@ title: enfv + random/chaotic gen
 subtitle: DIY eurorack synth workshop 01
 location: Pilsen, Chicago
 mode: in-person
-datetime: saturday 6.17.23, 1000-1600
-applyBy: 06.01.23
+type: workshop
+meeting: saturday 1000-1600
+dateType: oneoff
+date: 2023-06-24
+applyBy: 2023-06-10
 header: /assets/img/synth.png
 img: /assets/img/synth-sqr.png
+icon: chaos
 cost: $160
 tags:
   - diy
@@ -15,11 +19,18 @@ tags:
   - events
   - workshops
   - learning
+  - current
 ---
 
 # DIY Eurorack Synth Workshop 01: Envelope Follower & Random CV/Audio Generator
 
-## purpose
+<div style="width:100%;height:100px">
+<div class = "center">
+<button data-tf-popup="JkTTBTsc" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ATP101: Practices for Study, Studies for Practice" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Roboto Mono,mono;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#EF8354;color:#2D2D2A;font-size:20px;border-radius:0px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin-left:40%;text-decoration:none;">Apply</button><script src="//embed.typeform.com/next/embed.js"></script>
+</div>
+</div>
+
+## overview
 
 This full-day workshop is intended to give participants a solid grounding in the technical mentality and skills required to construct a DIY eurorack module. In the hands-on portion of the workshop, we will walk participants through the construction of their own two synth modules:
 
@@ -30,7 +41,7 @@ The pico envelope follower is [based on a design by Bumm Bumm Garage](https://ww
 
 In addition to this walk-through, we will teach some practical skills related to soldering, sourcing and pricing materials based on a BOM, troubleshooting, and other precautions related to constructing DIY synth modules.
 
-We hope to continuing offering such workshops, exploring other synthesis and DIY techniques.
+We hope to continuing offering such workshops, exploring other synthesis and DIY techniques, inviting other hardware and software synth practitioners and DIY makers from Chicago to host these workshops.
 
 ## logistics
 

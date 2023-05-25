@@ -1,0 +1,43 @@
+---
+layout: page.njk
+title: events
+---
+
+{% set categories = ["current","past"] %} {% for c in categories %}
+
+<h2 style="text-align: left">{{ c }}</h2>
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
+  {% for e in collections[c] %} {% if e.data.published != false %}
+  <div class="item col-xs-7 col-sm-5 col-md-4">
+    <div class="filter-overlay p-2 mb-4">
+      {% if e.data.url%}
+      <a href="{{ e.data.url }}" class="event">
+      {% else %} 
+      <a href="{{ e.url }}" class="event">
+      {% endif %}
+        <img class="img-fluid event filter" src="{{ e.data.img }}" />
+        <h3>{{ e.data.title }}</h3>
+        <h5>{{ e.data.subtitle }}</h5>
+        <p>{{ e.data.type }} </p>
+        {% if e.data.dateType == "oneoff" %}
+        <p>
+          {{ e.data.date | postDate }} {{ e.data.meeting }}
+        </p>
+        {% elif e.data.dateType == "range" %}
+        <p>
+          {{ e.data.meetings }},
+          {{ e.data.dateStart | postDate }} -
+          {{ e.data.dateEnd | postDate }}
+        </p>
+        {% elif e.data.dateType == "regular" %}
+        <p>
+          {{ e.data.meetings }}
+        </p>
+        {% endif%}
+        <p>@ {{ e.data.location }}</p>
+      </a>
+    </div>
+    </div>
+    {% endif%} {% endfor%}
+  </div>
+  {% endfor%}

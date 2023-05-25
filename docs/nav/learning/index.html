@@ -38,10 +38,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
-      async
     ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -49,11 +48,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
   <body onLoad="bigTextLoad()">
     <div id="splash"></div>
-    <div class="container">
+    <div class="container-fluid overflow-hidden">
       
 <div class="x-div">
   <a href="/index.html">
@@ -64,7 +64,7 @@
 </div>
 
 
-<div class="row masonry" data-masonry='{"percentPosition": true }'>
+<div class="row masonry grid" data-masonry='{"percentPosition": true }'>
   <div class="col-12 biggy">
     <span class="title">learning</span>
   </div>
@@ -88,26 +88,44 @@
 <ul>
   
   <div class="row">
-    <div class="col-sm-5 m-1">
+    
+
+    <div class="col-sm-4 p-1">
+      <img src="/assets/img/icons/plateau.svg" />
+    </div>
+    <div class="col-sm-4 p-1">
       <a href="/nav/learning/a-thousand-plateaus-101-studies-for-practice/">
-        <h2>
-          <span>a thousand plateaus 101</span>
-        </h2>
-        <h5 class="learning">
-          <span>studies for practice, practices for study</span>
-        </h5>
+        <div class="center">
+          <h2>
+            <span>a thousand plateaus 101</span>
+          </h2>
+          <h5 class="learning">
+            <span>studies for practice, practices for study</span>
+          </h5>
+        </div>
       </a>
     </div>
 
-    <div class="col-sm-5 m-1">
-      <p style="text-align: center">
-        wednesdays 1800-2100, 6.14.23-8.2.23
-      </p>
-      
-      <p style="text-align: center">
-        <strong>apply by: 6.1.23 </strong>
-      </p>
-      
+    <div class="col-sm-4 p-1">
+      <div class="center">
+        
+
+        <p style="text-align: center">
+          Jul 12, 2023 - Aug 23, 2023 |
+          wednesdays 1800-2100
+        </p>
+
+        
+        <p style="text-align: center">
+          
+        </p>
+
+        
+        <p style="text-align: center">
+          <strong>apply by: Jul 1, 2023 </strong>
+        </p>
+        
+      </div>
     </div>
 
     
@@ -116,33 +134,11 @@
         <p style="text-align: center">...</p>
       </div>
     </div>
-    
+     
   </div>
 
   
   <div class="row">
-    <div class="col-sm-5 m-1">
-      <a href="/nav/learning/intro-to-programming-for-artists/">
-        <h2>
-          <span>programming for artists</span>
-        </h2>
-        <h5 class="learning">
-          <span>intro to p5*js</span>
-        </h5>
-      </a>
-    </div>
-
-    <div class="col-sm-5 m-1">
-      <p style="text-align: center">
-        m-th 1000-1500, july 10-27
-      </p>
-      
-      <p style="text-align: center">
-        <strong>apply by: 7.1.23 </strong>
-      </p>
-      
-    </div>
-
     
   </div>
 
@@ -156,29 +152,46 @@
 <ul>
   
   <div class="row">
-    <div class="col-sm-5 m-1">
+    
+
+    <div class="col-sm-4 p-1">
+      <img src="/assets/img/icons/chaos.svg" />
+    </div>
+    <div class="col-sm-4 p-1">
       <a href="/nav/learning/diy-synth/">
-        <h2>
-          <span>enfv + random/chaotic gen</span>
-        </h2>
-        <h5 class="learning">
-          <span>DIY eurorack synth workshop 01</span>
-        </h5>
+        <div class="center">
+          <h2>
+            <span>enfv + random/chaotic gen</span>
+          </h2>
+          <h5 class="learning">
+            <span>DIY eurorack synth workshop 01</span>
+          </h5>
+        </div>
       </a>
     </div>
 
-    <div class="col-sm-5 m-1">
-      <p style="text-align: center">
-        saturday 6.17.23, 1000-1600
-      </p>
-      
-      <p style="text-align: center">
-        <strong>apply by: 06.01.23 </strong>
-      </p>
-      
+    <div class="col-sm-4 p-1">
+      <div class="center">
+        
+
+        <p style="text-align: center">
+          Jun 24, 2023 | saturday 1000-1600
+        </p>
+
+        
+        <p style="text-align: center">
+          
+        </p>
+
+        
+        <p style="text-align: center">
+          <strong>apply by: Jun 10, 2023 </strong>
+        </p>
+        
+      </div>
     </div>
 
-    
+     
   </div>
 
   
@@ -191,63 +204,79 @@
 <ul>
   
   <div class="row">
-    <div class="col-sm-5 m-1">
+    
+
+    <div class="col-sm-4 p-1">
+      <img src="/assets/img/icons/gen.svg" />
+    </div>
+    <div class="col-sm-4 p-1">
       <a href="/nav/learning/gen/">
-        <h2>
-          <span>gen~ working group</span>
-        </h2>
-        <h5 class="learning">
-          <span>generating sound &amp; organizing time</span>
-        </h5>
+        <div class="center">
+          <h2>
+            <span>gen~ working group</span>
+          </h2>
+          <h5 class="learning">
+            <span>generating sound &amp; organizing time</span>
+          </h5>
+        </div>
       </a>
     </div>
 
-    <div class="col-sm-5 m-1">
-      <p style="text-align: center">
-        fortnightly summer 2023
-      </p>
-      
+    <div class="col-sm-4 p-1">
+      <div class="center">
+        
+
+        <p style="text-align: center">
+          every other thursday 1700-1830
+        </p>
+
+        
+        <p style="text-align: center">
+          
+        </p>
+
+        
+      </div>
     </div>
 
-    
+     
   </div>
 
   
 </ul>
 
 
-<script>
-  $(function () {
-    var $wrapper = $(".masonry").imagesLoaded(function () {
-      $wrapper.masonry({
-        itemSelector: ".item",
-      });
-    });
-  });
-  addEventListener("resize", (event) => {
-    ".masonry".masonry({
-      itemSelector: ".item",
-    });
-  });
-</script>
 
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-      crossorigin="anonymous"
-    ></script>
+    <script src="/assets/js/bigtext.js"></script>
+
+    <script>
+      bigTextLoad();
+    </script>
+    <script>
+      $(function () {
+        var $container = $(".masonry");
+
+        $container.imagesLoaded(function () {
+          $container.masonry({
+            itemSelector: ".item",
+          });
+        });
+      });
+    </script>
+
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/bigtext.js"></script>
-
-    <script>
-      bigTextLoad();
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
 </html>

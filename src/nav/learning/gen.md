@@ -1,16 +1,23 @@
 ---
-tags: ["working group", "summer 2023", "events"]
 layout: course.njk
 title: gen~ working group
 type: fortnightly working group
 subtitle: "generating sound & organizing time"
 datetime: fortnightly summer 2023
+dateType: regular
+meetings: every other thursday 1700-1830
 location: Pilsen, Chicago / online
 mode: hybrid
 header: /assets/img/gen.png
 img: /assets/img/gen-sqr.png
+icon: gen
 dates: fortnightly summer 2032
 cost: free
+tags:
+  - current
+  - sound
+  - working group
+  - summer 2023
 ---
 
 # gen~ working group

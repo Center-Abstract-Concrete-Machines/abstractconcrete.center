@@ -38,10 +38,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
-      async
     ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -49,11 +48,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
   <body onLoad="bigTextLoad()">
     <div id="splash"></div>
-    <div class="container">
+    <div class="container-fluid overflow-hidden">
       
 
 
@@ -73,7 +73,12 @@
 
 <div style="width: 60%; margin: auto">
   <h1>DIY Eurorack Synth Workshop 01: Envelope Follower &amp; Random CV/Audio Generator</h1>
-<h2>purpose</h2>
+<div style="width:100%;height:100px">
+<div class = "center">
+<button data-tf-popup="JkTTBTsc" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ATP101: Practices for Study, Studies for Practice" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Roboto Mono,mono;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#EF8354;color:#2D2D2A;font-size:20px;border-radius:0px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin-left:40%;text-decoration:none;">Apply</button><script src="//embed.typeform.com/next/embed.js"></script>
+</div>
+</div>
+<h2>overview</h2>
 <p>This full-day workshop is intended to give participants a solid grounding in the technical mentality and skills required to construct a DIY eurorack module. In the hands-on portion of the workshop, we will walk participants through the construction of their own two synth modules:</p>
 <ul>
 <li>a pico [2HP] envelope follower</li>
@@ -81,7 +86,7 @@
 </ul>
 <p>The pico envelope follower is <a href="https://www.bummbummgarage.com/modules/envelope-follower/">based on a design by Bumm Bumm Garage</a>. The random and chaotic oscillator is based on <a href="https://www.ericasynths.lv/shop/discontinued-products/diy-swamp/">Erica's Synth Swamp</a>. The Swamp inherits from the <a href="https://learningmodular.com/glossary/wogglebug/">Wiard Wogglebug</a> and the <a href="https://learningmodular.com/glossary/source-of-uncertainty/">Buchla Source of Uncertainty</a>.</p>
 <p>In addition to this walk-through, we will teach some practical skills related to soldering, sourcing and pricing materials based on a BOM, troubleshooting, and other precautions related to constructing DIY synth modules.</p>
-<p>We hope to continuing offering such workshops, exploring other synthesis and DIY techniques.</p>
+<p>We hope to continuing offering such workshops, exploring other synthesis and DIY techniques, inviting other hardware and software synth practitioners and DIY makers from Chicago to host these workshops.</p>
 <h2>logistics</h2>
 <h3>cost</h3>
 <p>The cost for the workshop is $160 which includes the complete kits for the two synth modules. Because we are sourcing materials in bulk, in advance, and directly from manufacturer when possible, this price compares favorably to buying a DIY kit individually.</p>
@@ -101,21 +106,34 @@
 
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-      crossorigin="anonymous"
-    ></script>
+    <script src="/assets/js/bigtext.js"></script>
+
+    <script>
+      bigTextLoad();
+    </script>
+    <script>
+      $(function () {
+        var $container = $(".masonry");
+
+        $container.imagesLoaded(function () {
+          $container.masonry({
+            itemSelector: ".item",
+          });
+        });
+      });
+    </script>
+
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/bigtext.js"></script>
-
-    <script>
-      bigTextLoad();
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
 </html>

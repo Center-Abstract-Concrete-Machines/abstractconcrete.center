@@ -1,6 +1,9 @@
 ---
 layout: subpage.njk
-datetime: July 2023
+published: false
+# dateType may be "oneoff", "range"
+dateType: oneoff
+date: 2023-08-01
 title: Bleep Bloop Wee Woo
 subtitle: sonics arts movement and mentation outdoor event
 type: performance fundraiser
@@ -9,7 +12,7 @@ img: /assets/img/bleep.png
 tags:
   - performance
   - fundraiser
-  - events
+  - current
 ---
 
 # Bleep Bloop Wee Woo

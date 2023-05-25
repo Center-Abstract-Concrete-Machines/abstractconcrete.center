@@ -15,6 +15,11 @@ layout: base.njk
   <div>
     <img class="img-header grid-item" src="{{ header }}" />
   </div>
+  {% elif headerFull %}
+  <div>
+    <img class="img-header-full grid-item" src="{{ headerFull }}" />
+  </div>
+
   {% endif %}
 
   {{ content | safe }}

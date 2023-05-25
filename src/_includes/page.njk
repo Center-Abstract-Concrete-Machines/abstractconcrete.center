@@ -13,23 +13,9 @@ layout: base.njk
 {#
 <div id="spacer"></div>
 #}
-<div class="row masonry" data-masonry='{"percentPosition": true }'>
+<div class="row masonry grid" data-masonry='{"percentPosition": true }'>
   <div class="col-12 biggy">
     <span class="title">{{ title }}</span>
   </div>
 </div>
 {{ content | safe }}
-<script>
-  $(function () {
-    var $wrapper = $(".masonry").imagesLoaded(function () {
-      $wrapper.masonry({
-        itemSelector: ".item",
-      });
-    });
-  });
-  addEventListener("resize", (event) => {
-    ".masonry".masonry({
-      itemSelector: ".item",
-    });
-  });
-</script>

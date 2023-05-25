@@ -38,10 +38,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
-      async
     ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -49,11 +48,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
     <link href="/assets/css/style.css" rel="stylesheet" />
   </head>
   <body onLoad="bigTextLoad()">
     <div id="splash"></div>
-    <div class="container">
+    <div class="container-fluid overflow-hidden">
       
 <div class="x-div">
   <a href="/index.html">
@@ -64,110 +64,155 @@
 </div>
 
 
-<div class="row masonry" data-masonry='{"percentPosition": true }'>
+<div class="row masonry grid" data-masonry='{"percentPosition": true }'>
   <div class="col-12 biggy">
     <span class="title">events</span>
   </div>
 </div>
-<div class="row masonry" data-masonry='{"percentPosition": true }'>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/learning/a-thousand-plateaus-101-studies-for-practice/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "/assets/img/score.jpg">
-<h3>a thousand plateaus 101</h3>
-<h5>studies for practice, practices for study</h5>
-<p> | wednesdays 1800-2100, 6.14.23-8.2.23</p>
-<p></p></p>
-  </a>
-  </div>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/learning/diy-synth/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "/assets/img/synth-sqr.png">
-<h3>enfv + random/chaotic gen</h3>
-<h5>DIY eurorack synth workshop 01</h5>
-<p> | saturday 6.17.23, 1000-1600</p>
-<p>Pilsen, Chicago</p></p>
-  </a>
-  </div>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/learning/gen/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "/assets/img/gen-sqr.png">
-<h3>gen~ working group</h3>
-<h5>generating sound &amp; organizing time</h5>
-<p>fortnightly working group | fortnightly summer 2023</p>
-<p>Pilsen, Chicago / online</p></p>
-  </a>
-  </div>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/learning/intro-to-programming-for-artists/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "">
-<h3>programming for artists</h3>
-<h5>intro to p5*js</h5>
-<p> | m-th 1000-1500, july 10-27</p>
-<p></p></p>
-  </a>
-  </div>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/events/bleepbloopweewoo/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "/assets/img/bleep.png">
-<h3>Bleep Bloop Wee Woo</h3>
-<h5>sonics arts movement and mentation outdoor event</h5>
-<p>performance fundraiser | July 2023</p>
-<p>Chicago</p></p>
-  </a>
-  </div>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/events/informal-informations/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "/assets/img/phun-paper-2.jpg">
-<h3>(in)formal (in)formations</p>
-</h3>
-    <h5>tactics and infrastructure for under common gathering</h5>
-    <p>symposium | 07.04.2023</p>
-    <p>TBA, NYC</p>
-  </a>
-  </div>
-  <div class="item col-xs-7 col-sm-5 col-md-4 p-1 m-2 filter-overlay" style = "border-style:solid;border-width:0.1px">
-<p><a href = /nav/events/dispersionology/ class = "event"></p>
-<p><img class="img-fluid event filter" src = "/assets/img/dispersionology.jpg">
-<h3>dispersionology &amp; other tales</h3>
-<h5>transnational telematic audio peformance</h5>
-<p>performance event | Wednesday 5.10.23, 1400-1530</p>
-<p>telepresent</p></p>
-  </a>
-  </div>
-</div>
 
-<script>
-  $(function () {
-    var $wrapper = $(".masonry").imagesLoaded(function () {
-      $wrapper.masonry({
-        itemSelector: ".item",
-      });
-    });
-  });
-  addEventListener("resize", (event) => {
-    ".masonry".masonry({
-      itemSelector: ".item",
-    });
-  });
-</script>
+ 
+
+<h2 style="text-align: left">current</h2>
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
+   
+  <div class="item col-xs-7 col-sm-5 col-md-4">
+    <div class="filter-overlay p-2 mb-4">
+       
+      <a href="/nav/learning/a-thousand-plateaus-101-studies-for-practice/" class="event">
+      
+        <img class="img-fluid event filter" src="/assets/img/score.jpg" />
+        <h3>a thousand plateaus 101</h3>
+        <h5>studies for practice, practices for study</h5>
+        <p>course of study </p>
+        
+        <p>
+          wednesdays 1800-2100,
+          Jul 12, 2023 -
+          Aug 23, 2023
+        </p>
+        
+        <p>@ Chicago or Online</p>
+      </a>
+    </div>
+    </div>
+      
+  <div class="item col-xs-7 col-sm-5 col-md-4">
+    <div class="filter-overlay p-2 mb-4">
+       
+      <a href="/nav/learning/gen/" class="event">
+      
+        <img class="img-fluid event filter" src="/assets/img/gen-sqr.png" />
+        <h3>gen~ working group</h3>
+        <h5>generating sound &amp; organizing time</h5>
+        <p>fortnightly working group </p>
+        
+        <p>
+          every other thursday 1700-1830
+        </p>
+        
+        <p>@ Pilsen, Chicago / online</p>
+      </a>
+    </div>
+    </div>
+        
+  <div class="item col-xs-7 col-sm-5 col-md-4">
+    <div class="filter-overlay p-2 mb-4">
+       
+      <a href="/nav/learning/diy-synth/" class="event">
+      
+        <img class="img-fluid event filter" src="/assets/img/synth-sqr.png" />
+        <h3>enfv + random/chaotic gen</h3>
+        <h5>DIY eurorack synth workshop 01</h5>
+        <p>workshop </p>
+        
+        <p>
+          Jun 24, 2023 saturday 1000-1600
+        </p>
+        
+        <p>@ Pilsen, Chicago</p>
+      </a>
+    </div>
+    </div>
+      
+  <div class="item col-xs-7 col-sm-5 col-md-4">
+    <div class="filter-overlay p-2 mb-4">
+       
+      <a href="/nav/events/informal-informations/" class="event">
+      
+        <img class="img-fluid event filter" src="/assets/img/phun.png" />
+        <h3>(in)formal (in)formations
+</h3>
+        <h5>tactics and infrastructure for participatory and collaborative study &amp; making</h5>
+        <p>nanosymposium </p>
+        
+        <p>
+          Jul 3, 2023 
+        </p>
+        
+        <p>@ New INC, New York</p>
+      </a>
+    </div>
+    </div>
+       
+  </div>
+  
+
+<h2 style="text-align: left">past</h2>
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
+   
+  <div class="item col-xs-7 col-sm-5 col-md-4">
+    <div class="filter-overlay p-2 mb-4">
+       
+      <a href="/nav/events/dispersionology/" class="event">
+      
+        <img class="img-fluid event filter" src="/assets/img/dispersionology.jpg" />
+        <h3>dispersionology &amp; other tales</h3>
+        <h5>transnational telematic audio peformance</h5>
+        <p>performance event </p>
+        
+        <p>
+          May 10, 2023 
+        </p>
+        
+        <p>@ telepresent</p>
+      </a>
+    </div>
+    </div>
+     
+  </div>
+  
+
 
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-      crossorigin="anonymous"
-    ></script>
+    <script src="/assets/js/bigtext.js"></script>
+
+    <script>
+      bigTextLoad();
+    </script>
+    <script>
+      $(function () {
+        var $container = $(".masonry");
+
+        $container.imagesLoaded(function () {
+          $container.masonry({
+            itemSelector: ".item",
+          });
+        });
+      });
+    </script>
+
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/bigtext.js"></script>
-
-    <script>
-      bigTextLoad();
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
 </html>

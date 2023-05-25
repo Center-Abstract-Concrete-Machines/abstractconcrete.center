@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  let pageHeight = select(".container").size().height + 1000;
+  let pageHeight = select(".container-fluid").size().height + 1000;
   createCanvas(window.innerWidth, pageHeight);
   rectMode(CENTER);
 

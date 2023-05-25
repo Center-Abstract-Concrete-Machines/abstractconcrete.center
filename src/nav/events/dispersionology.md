@@ -1,15 +1,18 @@
 ---
 layout: subpage.njk
 title: dispersionology & other tales
+dateType: oneoff
 subtitle: transnational telematic audio peformance
 location: telepresent
 type: performance event
 mode: telepresent
-datetime: Wednesday 5.10.23, 1400-1530
+date: 2023-05-10
+datetime: 5.10.23 1400-1530
 header: /assets/img/dispersionology-header.png
 img: /assets/img/dispersionology.jpg
 tags:
   - events
+  - past
 ---
 
 # {{title}}
