@@ -68,6 +68,6 @@ Garrett Laroy Johnson first read the Rhizome in 2015 and fell into it. Since, De
 
 #### footnotes:
 
-0. Gilles Deleuze, "The Image of Thought" in Difference and Repetition, trans. Paul Patton 1994.
+0. Gilles Deleuze, "The Image of Thought," in Difference and Repetition, trans. Paul Patton 1994.
 
 1. Erin Manning, Brian Massumi, the Senselab and the Three Ecologies Institute; Steve Goodman (Kode9) and HyperDub Records, Édouard Glissant.
