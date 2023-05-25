@@ -1,0 +1,88 @@
+---
+layout: page.njk
+title: study
+---
+
+<div class="row">
+  <div class="col-12">
+    <p>
+      CCAM is a para-academic/institutional context for developing machinic
+      fluency. Read out <a href="faq/index.html">Learning FAQ</a> for more info.
+    </p>
+    <h1>summer 2023</h1>
+  </div>
+</div>
+
+{% set categories = ["courses","workshops", "working group"] %} {% for category
+in categories %}
+<div class="col-12">
+  <h2 class="subtitle">{{ category }}</h2>
+</div>
+
+<ul>
+  {% for c in collections[category] %}
+  <div class="row">
+    {% if c.data.published != false %}
+
+    <div class="col-sm-4 p-1">
+      <img src="/assets/img/icons/{{ c.data.icon }}.svg" />
+    </div>
+    <div class="col-sm-4 p-1">
+      <a href="{{ c.url }}">
+        <div class="center">
+          <h2>
+            <span>{{ c.data.title }}</span>
+          </h2>
+          <h5 class="learning">
+            <span>{{ c.data.subtitle }}</span>
+          </h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-4 p-1">
+      <div class="center">
+        {% if c.data.dateType == "range"%}
+
+        <p style="text-align: center">
+          {{ c.data.dateStart | postDate }} - {{ c.data.dateEnd | postDate }} |
+          {{ c.data.meetings }}
+        </p>
+
+        {% elif c.data.dateType == "oneoff"%}
+
+        <p style="text-align: center">
+          {{ c.data.date | postDate }} | {{ c.data.meeting }}
+        </p>
+
+        {% elif c.data.dateType == "regular"%}
+
+        <p style="text-align: center">
+          {{ c.data.meetings }}
+        </p>
+
+        {% endif %}
+        <p style="text-align: center">
+          {{ c.data.time }}
+        </p>
+
+        {% if c.data.applyBy %}
+        <p style="text-align: center">
+          <strong>apply by: {{ c.data.applyBy | postDate }} </strong>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if loop.last != true %}
+    <div class="col-12 m-1">
+      <div style="width: 50%; margin-left: auto; margin-right: auto">
+        <p style="text-align: center">...</p>
+      </div>
+    </div>
+    {%endif%} {%endif%}
+  </div>
+
+  {% endfor %}
+</ul>
+{% endfor %}
