@@ -22,15 +22,6 @@
   font-size: small;
 }
 
-.learning-item {
-  width: 33%;
-  display: table-cell;
-}
-
-.learning-module {
-  padding: 5%;
-}
-
 #spacer {
   width: 100%;
   border: 0px;
@@ -129,16 +120,22 @@ span.subtitle {
   font-family: "Roboto Mono", monospace;
 }
 
+p.learning,
 h5.learning {
   font-family: "Roboto Mono", monospace;
   text-align: center;
   color: rgba(45, 45, 42, 1);
 }
 
+div.study:hover {
+  background-color: rgba(152, 206, 0, 1);
+}
+
 h2.subtitle {
   color: rgba(239, 131, 84, 1);
   background-color: rgba(242, 235, 241, 0.8);
   text-align: left;
+  z-index: -1!;
 }
 
 /* unvisited link */

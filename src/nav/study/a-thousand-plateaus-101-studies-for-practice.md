@@ -28,7 +28,7 @@ LOCATION: Hybrid; in-person in Pilsen, Chicago, IL OR on Zoom
 
 FOR WHOM: artists, designers, dancers, choreographers, programmers, theorists, experimentalists otherwise. The course will be taught at a graduate/post-graduate level; non-academics, students, graduates, and faculty are welcome.
 
-INSTRUCTOR: Garrett Laroy Johnson, PhD
+INSTRUCTOR: Garrett Laroy Johnson
 
 GOALS: to cultivate a contemplative study practice adequete to making practice, or otherwise to begin with Deleuze and Guattari, or deepen an understanding of the book.
 

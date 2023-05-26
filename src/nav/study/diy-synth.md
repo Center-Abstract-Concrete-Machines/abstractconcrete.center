@@ -18,7 +18,7 @@ tags:
   - eurorack
   - events
   - workshops
-  - learning
+  - study
   - current
 ---
 
