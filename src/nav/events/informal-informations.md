@@ -7,8 +7,8 @@ title: >
   (in)formal (in)formations
 subtitle: tactics and infrastructure for participatory and collaborative study & making
 type: nanosymposium
-location: New INC, New York
-locationLink: https://www.newinc.org/
+location: TBA
+locationLink: 
 img: /assets/img/phun.png
 headerFull: /assets/img/phun-pano.jpg
 tags:
