@@ -1,16 +1,17 @@
 ---
-layout: course.njk
-time: 1400-1700
+layout: gallery.njk
+time: 1100-1600
 dateType: oneoff
 date: 2023-07-03
 title: >
   (in)formal (in)formations
 subtitle: tactics and infrastructure for participatory and collaborative study & making
 type: nanosymposium
-location: TBA
-locationLink: 
-img: /assets/img/phun.png
-headerFull: /assets/img/phun-pano.jpg
+location: NEW INC
+locationLink: https://www.newinc.org/
+img: /assets/img/iiny.png
+headerFull: /assets/img/ii-ny/pano.png
+gallery: iinyimg
 tags:
   - symposium
   - events
@@ -25,20 +26,39 @@ tags:
 
 [{{location}}]({{ locationLink }})
 
-### Date and Timetable
+### Date
 
 {{ date | postDate }}, {{ time }} ET
 
-[more soon]
+### Attendees
 
-### Participants
+#### Presenters
 
-[TBA]
-
-<!-- - Dakota Gearhart (video art)
+- Muindi Fanuel Muindi (philosophy, performance)
 - Garrett Laroy Johnson (media arts and sciences)
+- Daniel Lichtman (media art)
+- Kristin McWharter (game and media art)
 - Asa Sakrison (cultural geography, process theory)
-- Phillip Thurtle (philosophy of science and technology) -->
+- Lee Tusman (media art)
+
+#### Respondents
+
+- Maria Fernanda (philosophy)
+- Meg Hartwig (sculpture)
+- Dakota Gearhart (media art)
+- Man Kaplan (sociology and women's/gender studies)
+- Sam Stoelje (literature and the occult)
+- Phillip Thurtle (philosophy of science and technology)
+- Çaca Yvair (conservation and geoecology)
+
+{% block program %}
+
+  <div class = "col">
+    <a href = "/assets/pdf/iiny.pdf">
+      <img class = "img-fluid" src = "/assets/img/ii-ny/program-cover.png">
+    </a>
+  </div>
+{% endblock %}
 
 ### Abstract
 
@@ -64,10 +84,13 @@ Instead of fantasizing about European funding spigots, which also run dry, this
 symposium asks: what is possible for arts-research in our unique US American
 geopolitical, socioeconomic, racial, mediatized context?
 
-What work can be done
-by an informality of group formation work that formality cannot? What techniques
+What work can be done by an informality of group formation work that formality cannot? What techniques
 enable the assemblage of research and practice beyond disciplinary enclosure?
 How do we guarantee that such an “ecology of practices”, to borrow again from
 Stengers, bears an ethos sufficient the public it imbricates? In this small and
 informal symposium, we gather a diversity of perspectives that aspire to see the
 challenges and problematics of art and research organizing in a new light.
+
+## Thanks
+
+Special thanks to NEW INC and Dakota Gearhart!

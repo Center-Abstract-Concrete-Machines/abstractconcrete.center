@@ -1,5 +1,9 @@
 // Import prior to `module.exports` within `.eleventy.js`
 const { DateTime } = require("luxon");
+const fg = require("fast-glob");
+
+// Run search for images in /gallery and /sponsors
+const iinyimg = fg.sync("docs/**/ii-ny/*.jpg", { objectMode: true });
 
 module.exports = function (eleventyConfig) {
   // Create the filter function.
@@ -37,6 +41,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/assets/pdf/");
   eleventyConfig.addPassthroughCopy("src/assets/js/");
   eleventyConfig.addWatchTarget("src/assets/js/");
+  //Create collection of gallery images
+  eleventyConfig.addCollection("iiny", function (collection) {
+    return iinyimg;
+  });
+
   return {
     dir: {
       input: "src",

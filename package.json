@@ -21,5 +21,9 @@
   "homepage": "https://github.com/Center-Abstract-Concrete-Machines/abstractconcrete.center#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.0",
+    "glob": "^10.3.3"
   }
 }

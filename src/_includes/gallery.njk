@@ -1,0 +1,23 @@
+---
+layout: subpage.njk
+---
+
+<div class="row">
+  <div class="col-8">
+    {{ content | safe }}
+  </div>
+  <div class="col-4">
+    <div class="row masonry" data-masonry='{"percentPosition": true}'>
+      {# this is hacky code. I've hard coded the "iiny" image collection into
+      the template here. Not sure how to pass in a collection as a variable
+      inside of a for loop. #} {% for i in collections.iiny %}
+      <div class="col-5 m-1">
+        {# this is also hacky. I've hardcoded the absolute address because I
+        can't figure out how to get fast-glob to return relative address, or at
+        least an image address w/o the "docs" folder. #}
+        <img class="img-fluid" src="/assets/img/ii-ny/{{i.name}}" />
+      </div>
+      {% endfor%}
+    </div>
+  </div>
+</div>
