@@ -17,7 +17,6 @@ meetings: wednesdays 1800-2100
 icon: plateau
 sketch: /assets/js/atp.js
 applyBy: 2023-06-31
-cost: 400
 ---
 
 # 1000 Plateaus 101: Studies for Practice, Practices for Study
