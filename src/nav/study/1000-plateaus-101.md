@@ -31,7 +31,8 @@ FOR WHOM: artists, designers, dancers, choreographers, programmers, theorists, e
 INSTRUCTOR: Garrett Laroy Johnson
 
 GOALS: to learn how to make a Rhizome
-APPLY: By {{applyBy | postDate}}
+
+APPLY: [Here]((https://ko-fi.com/ccam_chicago/shop) ahead of time or day of
 
 COST: {{cost}}
 
