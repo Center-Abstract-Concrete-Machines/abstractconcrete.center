@@ -32,7 +32,7 @@ INSTRUCTOR: Garrett Laroy Johnson
 
 GOALS: to learn how to make a Rhizome
 
-APPLY: [Here]((https://ko-fi.com/ccam_chicago/shop) ahead of time or day of
+APPLY: [Here](https://ko-fi.com/ccam_chicago/shop) ahead of time or day of
 
 COST: {{cost}}
 
