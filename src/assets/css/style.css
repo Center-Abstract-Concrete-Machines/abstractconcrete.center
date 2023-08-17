@@ -131,6 +131,10 @@ div.study:hover {
   background-color: rgba(152, 206, 0, 1);
 }
 
+div.people:hover {
+  background-color: rgba(239, 131, 84, 1);
+}
+
 h2.subtitle {
   color: rgba(239, 131, 84, 1);
   background-color: rgba(242, 235, 241, 0.8);

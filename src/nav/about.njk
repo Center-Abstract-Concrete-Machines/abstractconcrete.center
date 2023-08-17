@@ -1,43 +1,76 @@
 ---
 layout: page.njk
 title: about
-elements:
-  - title: overview
-    text:
-      - CCAM is an artist-run center for experimental media arts research + practice founded Summer 2023. CCAM's mission is to create space for collective thinking and making that refuses to collapse either into the other. 
-      - Based in Chicago, CCAM looks to make paths for technical and theoretical exchange with practitioners and theorists around the world.
-      - CCAM offers courses of study in technics and theory and hosts working and critique groups. We organize symposia and group exhibitions, and co-sponsor performances and installations. In the future we look forward to offering transdisciplinary collaborative and intensive workshops, as well as microresidencies. 
-  - title: why now? transdisciplinarity otherwise
-    text:
-      - Arts-research, especially in media arts, has fewer and fewer homes in the United States. Unlike Canada and Europe, funding categories never materialized. Despite a passing trend in academic programs, institututions are shorting their investments and doubling down on art-world disciplinarity or culture-industry aligned job training.
-      - We do not yet know what transdisciplinary experimentalism can do. Or at least we know some of the bad, that performative movements outside disciplinarity are rebounded to find new ways of producing docile bodies, or that it provides cover for sneaking in market values in exchange for the fluid practices of industry.     
-      - > 
-        CCAM seeks to encourage a collective reinvestment in the value of rigorous study to experimental practice and practice to study. Instead of fantasizing about European funding spigots, which also run dry, this symposium asks: what is possible for arts-research in our unique US American context?
-  - title: for whom? practitioner-theorists-yet-to-come
-    text:
-      - CCAM is for artists, designers, theorists, dancers, technologists, analysts, futurists, historians.
-      - CCAM is for anyone willing to go between play and rigor.
-      - CCAM is for practitioners looking to grow their work's conceptual project and theorists looking to grow their work's practical dimensions.
-  - title: by whom? arts-researchers 
-    text:
-      - CCAM is an experiment in para-institutional organization. CCAM is currently operated by Garrett Laroy Johnson. They draw on organizational experiences with SloMoCo (slow movement and computing) and PHuN (the Posthuman Network).
-  - title: the name? dancing the mechanosphere
-    text:
-      - >
-        a name is an infrastructure. Isabelle Stengers writes:
-      - "Naming is a serious, that is, a pragmatic business, when it means giving to what is named the power to induce thinking and feeling in a particular way."
-      - CCAM's name signals an adherance to Felix Guattari and Gilles Deleuze's proclamation for a machinic cosmology; that there is no such thing as the biosphere, there is no such thing as the noosphere, there is only the mechanisphere. Simply put, abstract machines are ideas, principles, concepts, and feelings which might concretize into a material technical object. There is nothing else.
-
-      - The concept of concrete and abstract machines allows us to think art-research and its stakes. Perhaps the most contemporary and relevant caveat emerging from this way of thinking comes to us in what Alfred North Whitehead calls "the fallacy of misplaced concreteness", in which we mistake what is thought for what is.
+organizers : 
+ - name: garrett laroy johnson
+   img: garrett.png
+   disc: sound and media artist, researcher, and theorist
+ - name: kim nucci
+   img: kim.jpg
+   disc:  artist, composer, technologist
+ - name: muindi fanuel muindi
+   img: muindi.png
+   disc: poet, philosopher, theatre-artist
 ---
 
-<div class="row masonry" data-masonry='{"percentPosition": true }'>
-  {% for e in elements %}
-  <div class="item col-xs-7 col-sm-5 col-md-4 py-1">
-    <h3>{{ e.title }}</h3>
-    {% for p in e.text%}
-    <p>{{ p }}</p>
-    {% endfor %}
+<div class="row">
+  <div class="col-12">
+    <p>
+      Nomadically based in Chicago, CCAM is an artist-run platform at the nexus
+      of art, technology, and contemporary thought.
+    </p>
+
+    <p>
+      CCAM’s primary goal is building an accessible community for the
+      development and sharing of abstract ideas and forms of technical know-how,
+      know-when, and know-why historically siloed in academia. Reciprocally,
+      CCAM aims to hybridize the art, technology, and research cultures it
+      borrows from the academy by drawing on and inviting in queer, anti-racist,
+      and decolonial perspectives. By intentionally developing this community
+      outside of the academy, CCAM seeks to break down barriers to access for
+      engaging in research in art, technology, and surrounding criticism and
+      theory. CCAMstrives to center queer, anti-racist, and decolonial
+      perspectives in art and art technology.
+    </p>
+
+    <p>
+      CCAM serves artists in our community by offering donation-based seminars,
+      talks, and working groups investigating the liberatory potentials of
+      different theories of art, science, and technology. In its workshop
+      programming and future residency offerings, CCAM takes a para-academic
+      approach that prioritizes transdisciplinary exchange between residents,
+      mentors, and guests. CCAM’s focus on technology aims to provide artists
+      with diverse and experimental approaches to expressive interactive media
+      art creation. We build community through collaborative learning workshops
+      and working groups focused on both bleeding-edge toolkits as well as DIY
+      and open-source platforms for sound and video instrument composition.
+    </p>
+    <h1>organizers</h1>
   </div>
-  {% endfor%}
 </div>
+
+<div class="col-12">
+  <h2 class="subtitle">organizational board</h2>
+</div>
+
+<ul>
+  {% for o in organizers %} {% if c.data.published != false %}
+  <a href="{{ c.url }}">
+    <div class="row people">
+      <div class="col-sm-4 p-1">
+        <img src="/assets/img/people/{{ o.img }}" />
+      </div>
+      <div class="col-sm-4 p-1">
+        <div class="center">
+          <h2>
+            <span>{{ o.name }}</span>
+          </h2>
+          <h5 class="learning">
+            <span>{{ o.disc }}</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </a>
+  {%endif%} {% endfor %}
+</ul>
