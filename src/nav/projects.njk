@@ -2,3 +2,17 @@
 layout: page.njk
 title: projects
 ---
+
+<div class="row masonry" data-masonry='{"percentPosition": true }'>
+  {% for n in collections.projects %}
+  <div class="col-12 item">
+    <a href="{{ n.url }}">
+      <div class="biggy">
+        <h1>
+          <span class="nav">{{ n.data.title }}</span>
+        </h1>
+      </div>
+    </a>
+  </div>
+  {% endfor%}
+</div>
