@@ -1,0 +1,75 @@
+---
+layout: page.njk
+title: resources
+---
+
+{% set categories = ["synth-diy"] %} {% for category in categories %}
+<div class="col-12">
+  <h2 class="subtitle">{{ category }}</h2>
+</div>
+
+<ul>
+  {% for c in collections[category] %} {% if c.data.published != false %}
+  <a href="{{ c.url }}">
+    <div class="row study">
+      <div class="col-sm-4 p-1">
+        <img src="/assets/img/resources/{{ c.data.icon }}" />
+      </div>
+      <div class="col-sm-4 p-1">
+        <div class="">
+          <h2>
+            <span>{{ c.data.title }}</span>
+          </h2>
+          <h5 class="learning">
+            <span>{{ c.data.description }}</span>
+          </h5>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-1">
+        <div class="center">
+          {% if c.data.dateType == "range"%}
+
+          <p class="learning">
+            {{ c.data.dateStart | postDate }} -
+            {{ c.data.dateEnd | postDate }} |
+            {{ c.data.meetings }}
+          </p>
+
+          {% elif c.data.dateType == "oneoff"%}
+
+          <p class="learning">
+            {{ c.data.date | postDate }} | {{ c.data.meeting }}
+          </p>
+
+          {% elif c.data.dateType == "regular"%}
+
+          <p class="learning">
+            {{ c.data.meetings }}
+          </p>
+
+          {% endif %}
+          <p class="learning">
+            {{ c.data.time }}
+          </p>
+
+          {% if c.data.applyBy %}
+          <p class="learning">
+            <strong>apply by: {{ c.data.applyBy | postDate }} </strong>
+          </p>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if loop.last != true %}
+      <div class="col-12 m-1">
+        <div style="width: 50%; margin-left: auto; margin-right: auto">
+          <p style="text-align: center">...</p>
+        </div>
+      </div>
+      {%endif%}
+    </div>
+  </a>
+  {%endif%} {% endfor %}
+</ul>
+{% endfor %}

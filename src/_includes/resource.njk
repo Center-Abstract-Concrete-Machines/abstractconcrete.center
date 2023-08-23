@@ -1,0 +1,13 @@
+---
+layout: page.njk
+---
+
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+<ul>
+  {% for r in urls %}
+  <A HREF="{{r}}"
+    ><li>{{r}}</li></A
+  >
+  {% endfor %}
+</ul>
